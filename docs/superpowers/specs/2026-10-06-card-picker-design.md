@@ -60,8 +60,7 @@ card-picker/
     {
       "id": "cube", "bank": "國泰世華", "name": "CUBE 卡",
       "officialUrl": "https://...", "lastVerified": "2026-10-01",
-      "plans": [ { "id": "jingxuan", "name": "集精選" }, { "id": "wanle", "name": "玩數位" } ],
-      "switchPerDay": 1
+      "plans": [ { "id": "jingxuan", "name": "集精選" }, { "id": "wanle", "name": "玩數位" } ]
     }
   ],
   "rules": [
@@ -87,8 +86,7 @@ card-picker/
 | merchant | `cats` | | 類別 id 陣列 |
 | card | `id`, `bank`, `name`, `lastVerified` | ✓ | `lastVerified` 為 `YYYY-MM-DD` |
 | card | `officialUrl` | | 官網連結 |
-| card | `plans` | | 有此欄位即為方案卡 |
-| card | `switchPerDay` | 方案卡必填 | 每天可切換次數，依銀行官網填；v1 只記錄最後切換日期，大於等於 1 一律視為每天 1 次 |
+| card | `plans` | | 有此欄位即為方案卡；方案卡一律每天可切換一次 |
 | rule | `card`, `title`, `rate`, `payments` | ✓ | `rate` 為百分比數字；`payments` 不得為空，無預設值 |
 | rule | `plan` | | 有則僅在該方案啟用時適用；無則任何方案都適用 |
 | rule | `general` | | `true` 表示任何店家（含「一般消費」）都適用 |
@@ -190,7 +188,7 @@ recommend(data, { payments, merchantId, ownedCardIds, planState, today })
 
 - 所有 id 唯一；規則引用的 `card`、`plan`、`merchants`、`excludeMerchants`、`payments` 都存在
 - 日期格式正確；`rate` 為非負數字；`payments` 非空
-- 方案卡有 `switchPerDay`；每條規則至少有一種店家適用方式
+- 方案卡 `plans` 非空且方案 id 唯一；每條規則至少有一種店家適用方式
 
 ## 初始資料
 
