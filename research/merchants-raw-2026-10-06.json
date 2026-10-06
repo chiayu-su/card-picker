@@ -1,0 +1,3939 @@
+[
+ {
+  "id": "chatgpt",
+  "name": "ChatGPT",
+  "aliases": [
+   "OpenAI"
+  ],
+  "cats": [
+   "ai"
+  ],
+  "sources": [
+   "cube:玩數位",
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "canva",
+  "name": "Canva",
+  "aliases": [
+   "Canvas"
+  ],
+  "cats": [
+   "ai"
+  ],
+  "sources": [
+   "cube:玩數位",
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "claude",
+  "name": "Claude",
+  "aliases": [
+   "Anthropic"
+  ],
+  "cats": [
+   "ai"
+  ],
+  "sources": [
+   "cube:玩數位",
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "cursor",
+  "name": "Cursor",
+  "aliases": [],
+  "cats": [
+   "ai"
+  ],
+  "sources": [
+   "cube:玩數位"
+  ]
+ },
+ {
+  "id": "duolingo",
+  "name": "Duolingo",
+  "aliases": [],
+  "cats": [
+   "ai",
+   "education"
+  ],
+  "sources": [
+   "cube:玩數位"
+  ]
+ },
+ {
+  "id": "gamma",
+  "name": "Gamma",
+  "aliases": [],
+  "cats": [
+   "ai"
+  ],
+  "sources": [
+   "cube:玩數位"
+  ]
+ },
+ {
+  "id": "gemini",
+  "name": "Gemini",
+  "aliases": [
+   "Google Gemini"
+  ],
+  "cats": [
+   "ai"
+  ],
+  "sources": [
+   "cube:玩數位"
+  ]
+ },
+ {
+  "id": "notion",
+  "name": "Notion",
+  "aliases": [],
+  "cats": [
+   "ai"
+  ],
+  "sources": [
+   "cube:玩數位",
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "perplexity",
+  "name": "Perplexity",
+  "aliases": [],
+  "cats": [
+   "ai"
+  ],
+  "sources": [
+   "cube:玩數位",
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "speak",
+  "name": "Speak",
+  "aliases": [],
+  "cats": [
+   "ai",
+   "education"
+  ],
+  "sources": [
+   "cube:玩數位"
+  ]
+ },
+ {
+  "id": "apple_media",
+  "name": "Apple媒體服務",
+  "aliases": [
+   "App Store",
+   "iCloud",
+   "Apple Music"
+  ],
+  "cats": [
+   "streaming",
+   "digital"
+  ],
+  "sources": [
+   "cube:玩數位"
+  ]
+ },
+ {
+  "id": "google_play",
+  "name": "Google Play",
+  "aliases": [],
+  "cats": [
+   "digital"
+  ],
+  "sources": [
+   "cube:玩數位"
+  ]
+ },
+ {
+  "id": "disney_plus",
+  "name": "Disney+",
+  "aliases": [
+   "迪士尼+"
+  ],
+  "cats": [
+   "streaming"
+  ],
+  "sources": [
+   "cube:玩數位",
+   "richart:數趣刷",
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "netflix",
+  "name": "Netflix",
+  "aliases": [
+   "網飛"
+  ],
+  "cats": [
+   "streaming"
+  ],
+  "sources": [
+   "cube:玩數位",
+   "richart:數趣刷",
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "spotify",
+  "name": "Spotify",
+  "aliases": [],
+  "cats": [
+   "streaming"
+  ],
+  "sources": [
+   "cube:玩數位"
+  ]
+ },
+ {
+  "id": "youtube_premium",
+  "name": "YouTube Premium",
+  "aliases": [],
+  "cats": [
+   "streaming"
+  ],
+  "sources": [
+   "cube:玩數位"
+  ]
+ },
+ {
+  "id": "max",
+  "name": "Max",
+  "aliases": [
+   "HBO Max"
+  ],
+  "cats": [
+   "streaming"
+  ],
+  "sources": [
+   "cube:玩數位"
+  ]
+ },
+ {
+  "id": "shopee",
+  "name": "蝦皮購物",
+  "aliases": [
+   "蝦皮",
+   "Shopee"
+  ],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "cube:玩數位",
+   "richart:數趣刷",
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "momo",
+  "name": "momo購物網",
+  "aliases": [
+   "momo",
+   "富邦momo"
+  ],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "cube:玩數位",
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "pchome",
+  "name": "PChome 24h購物",
+  "aliases": [
+   "PChome",
+   "24h"
+  ],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "cube:玩數位",
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "xiaoshu",
+  "name": "小樹購",
+  "aliases": [],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "cube:玩數位"
+  ]
+ },
+ {
+  "id": "coupang",
+  "name": "Coupang酷澎",
+  "aliases": [
+   "酷澎"
+  ],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "cube:玩數位",
+   "richart:數趣刷",
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "taobao",
+  "name": "淘寶/天貓",
+  "aliases": [
+   "淘寶",
+   "天貓",
+   "Tmall"
+  ],
+  "cats": [
+   "ecommerce",
+   "overseas-ecommerce"
+  ],
+  "sources": [
+   "cube:玩數位",
+   "richart:數趣刷",
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "fe_sogo",
+  "name": "遠東SOGO",
+  "aliases": [
+   "SOGO",
+   "崇光"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "skm",
+  "name": "新光三越",
+  "aliases": [
+   "新光",
+   "SKM"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:Pay著刷",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "fe_garden_city",
+  "name": "遠東Garden City",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "taipei101",
+  "name": "台北101",
+  "aliases": [
+   "101購物中心"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "bellavita",
+  "name": "BELLAVITA",
+  "aliases": [
+   "寶麗廣場"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "breeze",
+  "name": "微風廣場",
+  "aliases": [
+   "微風"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "uni_times_taipei",
+  "name": "統一時代台北店",
+  "aliases": [
+   "統一時代"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "eslite",
+  "name": "誠品生活",
+  "aliases": [
+   "誠品"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "att4fun",
+  "name": "ATT 4 FUN",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "q_square",
+  "name": "京站",
+  "aliases": [
+   "京站時尚廣場"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "miramar",
+  "name": "美麗華",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "noke",
+  "name": "NOKE忠泰",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "lifestyle_mall",
+  "name": "樂生活",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "takashimaya",
+  "name": "大葉高島屋",
+  "aliases": [
+   "高島屋"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "lalaport",
+  "name": "Mitsui LaLaport",
+  "aliases": [
+   "LaLaport",
+   "三井LaLaport"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "hhh_plaza",
+  "name": "宏匯廣場",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "taimall",
+  "name": "台茂",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "dajiang",
+  "name": "大江購物",
+  "aliases": [
+   "大江"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "bigcity",
+  "name": "Big City",
+  "aliases": [
+   "遠東Big City"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "fe_bigcity_hsinchu",
+  "name": "遠東巨城",
+  "aliases": [
+   "巨城"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "zhongyou",
+  "name": "中友百貨",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "guangsan_sogo",
+  "name": "廣三SOGO",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "tainan_mall",
+  "name": "南紡購物中心",
+  "aliases": [
+   "南紡"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "nice_plaza",
+  "name": "耐斯廣場",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "dream_mall",
+  "name": "夢時代",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "hanshin",
+  "name": "漢神百貨",
+  "aliases": [
+   "漢神"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "hanshin_arena",
+  "name": "漢神巨蛋",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "xinyue",
+  "name": "新月廣場",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "citylink",
+  "name": "CITYLINK",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "showtime_life",
+  "name": "秀泰生活",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "global_mall",
+  "name": "環球購物中心",
+  "aliases": [
+   "環球購物"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "pacific",
+  "name": "太平洋百貨",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "hwatai",
+  "name": "華泰名品城",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "skm_park",
+  "name": "SKM Park Outlets",
+  "aliases": [
+   "SKM Park"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "mitsui_outlet",
+  "name": "MITSUI OUTLET PARK",
+  "aliases": [
+   "三井Outlet"
+  ],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "ubereats",
+  "name": "Uber Eats",
+  "aliases": [
+   "優食"
+  ],
+  "cats": [
+   "food-delivery"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "cube:慶生月",
+   "richart:好饗刷",
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "foodpanda",
+  "name": "foodpanda",
+  "aliases": [
+   "熊貓"
+  ],
+  "cats": [
+   "food-delivery"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "mcdonalds",
+  "name": "麥當勞",
+  "aliases": [
+   "McDonald's"
+  ],
+  "cats": [
+   "dining",
+   "fastfood"
+  ],
+  "sources": [
+   "cube:樂饗購"
+  ]
+ },
+ {
+  "id": "cosmed",
+  "name": "康是美",
+  "aliases": [],
+  "cats": [
+   "drugstore"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:Pay著刷",
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "watsons",
+  "name": "屈臣氏",
+  "aliases": [
+   "Watsons"
+  ],
+  "cats": [
+   "drugstore"
+  ],
+  "sources": [
+   "cube:樂饗購",
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "overseas",
+  "name": "海外實體消費",
+  "aliases": [
+   "海外消費"
+  ],
+  "cats": [
+   "overseas"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "dawho:國外2%/cube:趣旅行"
+  ]
+ },
+ {
+  "id": "tokyo_disney",
+  "name": "東京迪士尼樂園",
+  "aliases": [
+   "東京迪士尼"
+  ],
+  "cats": [
+   "travel",
+   "theme-park",
+   "overseas"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "cube:慶生月",
+   "cube:童樂匯"
+  ]
+ },
+ {
+  "id": "usj",
+  "name": "大阪環球影城",
+  "aliases": [
+   "USJ"
+  ],
+  "cats": [
+   "travel",
+   "theme-park",
+   "overseas"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "cube:慶生月",
+   "cube:童樂匯"
+  ]
+ },
+ {
+  "id": "suica",
+  "name": "Apple錢包交通卡(Suica/PASMO/ICOCA)",
+  "aliases": [
+   "Suica",
+   "PASMO",
+   "ICOCA"
+  ],
+  "cats": [
+   "transport",
+   "overseas"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "uber",
+  "name": "Uber",
+  "aliases": [],
+  "cats": [
+   "transport"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:天天刷",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "grab",
+  "name": "Grab",
+  "aliases": [],
+  "cats": [
+   "transport",
+   "overseas"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "thsr",
+  "name": "台灣高鐵",
+  "aliases": [
+   "高鐵",
+   "THSR"
+  ],
+  "cats": [
+   "transport"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "yoxi",
+  "name": "yoxi台灣大車隊",
+  "aliases": [
+   "台灣大車隊",
+   "55688"
+  ],
+  "cats": [
+   "transport"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "irent",
+  "name": "iRent",
+  "aliases": [],
+  "cats": [
+   "transport",
+   "car-rental"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "hyundai_rent",
+  "name": "和運租車",
+  "aliases": [],
+  "cats": [
+   "car-rental"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "car_plus",
+  "name": "格上租車",
+  "aliases": [],
+  "cats": [
+   "car-rental"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "china_airlines",
+  "name": "中華航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "eva_air",
+  "name": "長榮航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "starlux",
+  "name": "星宇航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "tigerair",
+  "name": "台灣虎航",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "cathay_pacific",
+  "name": "國泰航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "peach",
+  "name": "樂桃航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "emirates",
+  "name": "阿聯酋航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "scoot",
+  "name": "酷航",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "jetstar",
+  "name": "捷星航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "jal",
+  "name": "日本航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "ana",
+  "name": "ANA全日空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "airasia",
+  "name": "亞洲航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "united",
+  "name": "聯合航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "sia",
+  "name": "新加坡航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "vietjet",
+  "name": "越捷航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "korean_air",
+  "name": "大韓航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "delta",
+  "name": "達美航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "turkish",
+  "name": "土耳其航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "qatar",
+  "name": "卡達航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "air_france",
+  "name": "法國航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "mandarin_airlines",
+  "name": "華信航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "uni_air",
+  "name": "立榮航空",
+  "aliases": [],
+  "cats": [
+   "airline",
+   "travel"
+  ],
+  "sources": [
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "hoshino",
+  "name": "星野集團",
+  "aliases": [],
+  "cats": [
+   "hotel",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "disney_hotel",
+  "name": "全球迪士尼飯店",
+  "aliases": [],
+  "cats": [
+   "hotel",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "toyoko",
+  "name": "東橫INN",
+  "aliases": [],
+  "cats": [
+   "hotel",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "kkday",
+  "name": "KKday",
+  "aliases": [],
+  "cats": [
+   "booking-platform",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "klook",
+  "name": "Klook",
+  "aliases": [
+   "客路"
+  ],
+  "cats": [
+   "booking-platform",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "agoda",
+  "name": "Agoda",
+  "aliases": [],
+  "cats": [
+   "booking-platform",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "airbnb",
+  "name": "Airbnb",
+  "aliases": [],
+  "cats": [
+   "booking-platform",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "booking",
+  "name": "Booking.com",
+  "aliases": [],
+  "cats": [
+   "booking-platform",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "tripcom",
+  "name": "Trip.com",
+  "aliases": [
+   "攜程"
+  ],
+  "cats": [
+   "booking-platform",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "eztravel",
+  "name": "ezTravel易遊網",
+  "aliases": [
+   "易遊網"
+  ],
+  "cats": [
+   "booking-platform",
+   "travel",
+   "travel-agency"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "lion_travel",
+  "name": "雄獅旅遊",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "colatour",
+  "name": "可樂旅遊",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "settour",
+  "name": "東南旅遊",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "wufu",
+  "name": "五福旅遊",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "canstar",
+  "name": "燦星旅遊",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "fuji_travel",
+  "name": "山富旅遊",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "evergreen_holiday",
+  "name": "長汎假期",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "phoenix_travel",
+  "name": "鳳凰旅行社",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "ezfly",
+  "name": "Ezfly易飛網",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行",
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "ideal_travel",
+  "name": "理想旅遊",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "yongli_travel",
+  "name": "永利旅行社",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "sanhe_travel",
+  "name": "三賀旅行社",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "cube:趣旅行"
+  ]
+ },
+ {
+  "id": "upower",
+  "name": "U-POWER",
+  "aliases": [],
+  "cats": [
+   "ev-charging"
+  ],
+  "sources": [
+   "cube:集精選",
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "evoasis",
+  "name": "EVOASIS",
+  "aliases": [],
+  "cats": [
+   "ev-charging"
+  ],
+  "sources": [
+   "cube:集精選",
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "evalue",
+  "name": "EVALUE",
+  "aliases": [],
+  "cats": [
+   "ev-charging"
+  ],
+  "sources": [
+   "cube:集精選",
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "tail_icharging",
+  "name": "TAIL/iCharging",
+  "aliases": [],
+  "cats": [
+   "ev-charging"
+  ],
+  "sources": [
+   "cube:集精選"
+  ]
+ },
+ {
+  "id": "carmaji",
+  "name": "車麻吉",
+  "aliases": [],
+  "cats": [
+   "parking"
+  ],
+  "sources": [
+   "cube:集精選"
+  ]
+ },
+ {
+  "id": "utaggo",
+  "name": "uTagGo",
+  "aliases": [],
+  "cats": [
+   "parking"
+  ],
+  "sources": [
+   "cube:集精選"
+  ]
+ },
+ {
+  "id": "simplemart",
+  "name": "萬家福(樂家康)",
+  "aliases": [
+   "樂家康",
+   "Simple Mart"
+  ],
+  "cats": [
+   "supermarket"
+  ],
+  "sources": [
+   "cube:集精選",
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "lopia",
+  "name": "LOPIA",
+  "aliases": [],
+  "cats": [
+   "supermarket"
+  ],
+  "sources": [
+   "cube:集精選",
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "pxmart",
+  "name": "全聯福利中心",
+  "aliases": [
+   "全聯",
+   "大全聯",
+   "PX Mart"
+  ],
+  "cats": [
+   "supermarket"
+  ],
+  "sources": [
+   "cube:集精選",
+   "cube:全支付"
+  ]
+ },
+ {
+  "id": "cpc",
+  "name": "台灣中油直營站",
+  "aliases": [
+   "中油"
+  ],
+  "cats": [
+   "gas"
+  ],
+  "sources": [
+   "cube:集精選",
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "seven",
+  "name": "7-ELEVEN",
+  "aliases": [
+   "7-11",
+   "小七",
+   "統一超商"
+  ],
+  "cats": [
+   "convenience"
+  ],
+  "sources": [
+   "cube:集精選",
+   "cube:台塑家",
+   "richart:天天刷",
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "familymart",
+  "name": "全家便利商店",
+  "aliases": [
+   "全家",
+   "FamilyMart"
+  ],
+  "cats": [
+   "convenience"
+  ],
+  "sources": [
+   "cube:集精選",
+   "cube:台塑家",
+   "richart:天天刷",
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "ikea",
+  "name": "IKEA宜家家居",
+  "aliases": [
+   "IKEA",
+   "宜家"
+  ],
+  "cats": [
+   "home"
+  ],
+  "sources": [
+   "cube:集精選",
+   "richart:Pay著刷",
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "daiwan_bbq",
+  "name": "大腕燒肉",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "tea6",
+  "name": "茶六燒肉堂",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月",
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "laojing",
+  "name": "老井極上燒肉屋",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "umaya",
+  "name": "屋馬燒肉",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月",
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "dingwang",
+  "name": "鼎王麻辣鍋",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "wulao",
+  "name": "無老鍋",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "laosichuan",
+  "name": "老四川",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "bashu",
+  "name": "巴蜀麻辣燙",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "zhanji_hotpot",
+  "name": "詹記麻辣火鍋",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月",
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "qingmu",
+  "name": "青沐",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "suo",
+  "name": "所SUO",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "song",
+  "name": "嵩sung",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "jai",
+  "name": "JAI宅",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "xindongnan",
+  "name": "新東南海鮮餐廳",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "longdu",
+  "name": "龍都酒樓",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "jipin",
+  "name": "吉品海鮮餐廳",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "laoxin",
+  "name": "老新台菜",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "karuizawa",
+  "name": "輕井澤鍋物",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "tangzhan",
+  "name": "湯棧",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "habu",
+  "name": "Hābu小餐館",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "komboi",
+  "name": "空盤KOMBOI",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "wild_donkey",
+  "name": "野驢小餐館",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "rouliaoli",
+  "name": "肉料理福",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "sushiro",
+  "name": "台灣壽司郎",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "uncle_shawn",
+  "name": "UNCLE SHAWN燒肉餐酒館",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "uncle_ray",
+  "name": "UNCLE RAY串燒",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "shushu_hotpot",
+  "name": "蜀叔麻辣鍋",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "pastaio",
+  "name": "Pastaio",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "xiaofangzhou",
+  "name": "小方舟串燒酒場",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "maodon",
+  "name": "毛丼",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "maofang",
+  "name": "毛房蔥柚鍋",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "maosu",
+  "name": "毛蔬亞洲蔬食",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "french_secret",
+  "name": "法國的秘密甜點",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "fabon",
+  "name": "法朋烘焙",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "miss_v",
+  "name": "Miss V Bakery",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "simple_kaffa",
+  "name": "興波咖啡",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月"
+  ]
+ },
+ {
+  "id": "playstation",
+  "name": "PlayStation",
+  "aliases": [],
+  "cats": [
+   "gaming"
+  ],
+  "sources": [
+   "cube:慶生月",
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "nintendo",
+  "name": "Nintendo",
+  "aliases": [],
+  "cats": [
+   "gaming"
+  ],
+  "sources": [
+   "cube:慶生月",
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "bahamut",
+  "name": "巴哈姆特",
+  "aliases": [
+   "動畫瘋"
+  ],
+  "cats": [
+   "digital",
+   "streaming"
+  ],
+  "sources": [
+   "cube:慶生月",
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "cashbox",
+  "name": "錢櫃KTV",
+  "aliases": [
+   "錢櫃"
+  ],
+  "cats": [
+   "ktv",
+   "entertainment"
+  ],
+  "sources": [
+   "cube:慶生月",
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "holiday_ktv",
+  "name": "好樂迪KTV",
+  "aliases": [
+   "好樂迪"
+  ],
+  "cats": [
+   "ktv",
+   "entertainment"
+  ],
+  "sources": [
+   "cube:慶生月",
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "starpoint_ktv",
+  "name": "星聚點KTV",
+  "aliases": [
+   "星聚點"
+  ],
+  "cats": [
+   "ktv",
+   "entertainment"
+  ],
+  "sources": [
+   "cube:慶生月",
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "warm_ktv",
+  "name": "享溫馨KTV",
+  "aliases": [
+   "享溫馨"
+  ],
+  "cats": [
+   "ktv",
+   "entertainment"
+  ],
+  "sources": [
+   "cube:慶生月",
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "funnow",
+  "name": "FunNow",
+  "aliases": [],
+  "cats": [
+   "booking-platform",
+   "dining"
+  ],
+  "sources": [
+   "cube:慶生月",
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "fpcc",
+  "name": "台塑石油",
+  "aliases": [],
+  "cats": [
+   "gas"
+  ],
+  "sources": [
+   "cube:台塑家"
+  ]
+ },
+ {
+  "id": "taya",
+  "name": "台亞加油站",
+  "aliases": [],
+  "cats": [
+   "gas"
+  ],
+  "sources": [
+   "cube:台塑家"
+  ]
+ },
+ {
+  "id": "formosa_fumao",
+  "name": "福懋加油站",
+  "aliases": [],
+  "cats": [
+   "gas"
+  ],
+  "sources": [
+   "cube:台塑家"
+  ]
+ },
+ {
+  "id": "uni_speed",
+  "name": "統一速邁樂加油站",
+  "aliases": [],
+  "cats": [
+   "gas"
+  ],
+  "sources": [
+   "cube:台塑家"
+  ]
+ },
+ {
+  "id": "fpg_bio",
+  "name": "台塑生醫實體門市",
+  "aliases": [],
+  "cats": [
+   "health",
+   "retail"
+  ],
+  "sources": [
+   "cube:台塑家"
+  ]
+ },
+ {
+  "id": "cgbio",
+  "name": "長庚生技實體門市",
+  "aliases": [],
+  "cats": [
+   "health",
+   "retail"
+  ],
+  "sources": [
+   "cube:台塑家"
+  ]
+ },
+ {
+  "id": "fp_veg",
+  "name": "台塑蔬菜實體門市",
+  "aliases": [],
+  "cats": [
+   "health",
+   "retail"
+  ],
+  "sources": [
+   "cube:台塑家"
+  ]
+ },
+ {
+  "id": "fp_shop",
+  "name": "台塑購物網",
+  "aliases": [],
+  "cats": [
+   "health",
+   "retail"
+  ],
+  "sources": [
+   "cube:台塑家"
+  ]
+ },
+ {
+  "id": "hilife",
+  "name": "萊爾富",
+  "aliases": [],
+  "cats": [
+   "convenience"
+  ],
+  "sources": [
+   "cube:台塑家",
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "quanpay",
+  "name": "全支付",
+  "aliases": [
+   "全支付國內合作通路"
+  ],
+  "cats": [
+   "mobilepay"
+  ],
+  "sources": [
+   "cube:全支付"
+  ]
+ },
+ {
+  "id": "insurance",
+  "name": "保費(國內壽險/產險)",
+  "aliases": [
+   "保險費"
+  ],
+  "cats": [
+   "insurance"
+  ],
+  "sources": [
+   "cube:童樂匯",
+   "richart:保費"
+  ]
+ },
+ {
+  "id": "private_schools",
+  "name": "指定私校學費",
+  "aliases": [],
+  "cats": [
+   "education"
+  ],
+  "sources": [
+   "cube:童樂匯"
+  ]
+ },
+ {
+  "id": "kids_restaurants",
+  "name": "親子餐廳(陶板屋/YAYOI/大戶屋等)",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "cube:童樂匯"
+  ]
+ },
+ {
+  "id": "theme_parks_tw",
+  "name": "國內樂園(麗寶/六福村/九族/劍湖山/義大/Xpark)",
+  "aliases": [],
+  "cats": [
+   "theme-park"
+  ],
+  "sources": [
+   "cube:童樂匯"
+  ]
+ },
+ {
+  "id": "kids_hotels",
+  "name": "親子飯店",
+  "aliases": [],
+  "cats": [
+   "hotel"
+  ],
+  "sources": [
+   "cube:童樂匯"
+  ]
+ },
+ {
+  "id": "baby_stores",
+  "name": "母嬰用品店",
+  "aliases": [],
+  "cats": [
+   "retail"
+  ],
+  "sources": [
+   "cube:童樂匯"
+  ]
+ },
+ {
+  "id": "kids_classes",
+  "name": "五感體驗課",
+  "aliases": [],
+  "cats": [
+   "education"
+  ],
+  "sources": [
+   "cube:童樂匯"
+  ]
+ },
+ {
+  "id": "baby_brands",
+  "name": "嬰幼童品牌官網",
+  "aliases": [],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "cube:童樂匯"
+  ]
+ },
+ {
+  "id": "taishin_pay",
+  "name": "台新Pay",
+  "aliases": [
+   "Richart Pay"
+  ],
+  "cats": [
+   "mobilepay"
+  ],
+  "sources": [
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "taishin_pay_plus",
+  "name": "台新Pay+",
+  "aliases": [],
+  "cats": [
+   "mobilepay"
+  ],
+  "sources": [
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "linepay",
+  "name": "LINE Pay",
+  "aliases": [],
+  "cats": [
+   "mobilepay"
+  ],
+  "sources": [
+   "richart:Pay著刷",
+   "richart:假日刷"
+  ]
+ },
+ {
+  "id": "allpay_plus",
+  "name": "全盈+Pay",
+  "aliases": [
+   "全盈+PAY"
+  ],
+  "cats": [
+   "mobilepay"
+  ],
+  "sources": [
+   "richart:Pay著刷",
+   "richart:假日刷"
+  ]
+ },
+ {
+  "id": "richart_mart",
+  "name": "Richart Mart",
+  "aliases": [],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "richart:Pay著刷",
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "net",
+  "name": "NET",
+  "aliases": [],
+  "cats": [
+   "fashion"
+  ],
+  "sources": [
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "sinon",
+  "name": "神腦",
+  "aliases": [],
+  "cats": [
+   "electronics"
+  ],
+  "sources": [
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "tsann_kuen",
+  "name": "燦坤",
+  "aliases": [],
+  "cats": [
+   "electronics"
+  ],
+  "sources": [
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "elifemall",
+  "name": "全國電子",
+  "aliases": [],
+  "cats": [
+   "electronics"
+  ],
+  "sources": [
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "simplemart_cheap",
+  "name": "美廉社",
+  "aliases": [],
+  "cats": [
+   "supermarket"
+  ],
+  "sources": [
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "dashu_pharmacy",
+  "name": "大樹藥局",
+  "aliases": [],
+  "cats": [
+   "drugstore"
+  ],
+  "sources": [
+   "richart:Pay著刷",
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "lawson_jp",
+  "name": "日本LAWSON",
+  "aliases": [],
+  "cats": [
+   "convenience",
+   "overseas"
+  ],
+  "sources": [
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "biccamera",
+  "name": "BicCamera",
+  "aliases": [],
+  "cats": [
+   "electronics",
+   "overseas"
+  ],
+  "sources": [
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "gs25_kr",
+  "name": "韓國GS25",
+  "aliases": [],
+  "cats": [
+   "convenience",
+   "overseas"
+  ],
+  "sources": [
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "daiso",
+  "name": "DAISO",
+  "aliases": [],
+  "cats": [
+   "retail",
+   "overseas"
+  ],
+  "sources": [
+   "richart:Pay著刷"
+  ]
+ },
+ {
+  "id": "donki",
+  "name": "唐吉訶德",
+  "aliases": [],
+  "cats": [
+   "supermarket"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "daimaijia",
+  "name": "大買家",
+  "aliases": [],
+  "cats": [
+   "supermarket"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "zhishenghuo",
+  "name": "智生活",
+  "aliases": [],
+  "cats": [
+   "supermarket"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "tra",
+  "name": "臺鐵",
+  "aliases": [],
+  "cats": [
+   "transport"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "line_go",
+  "name": "LINE GO",
+  "aliases": [],
+  "cats": [
+   "transport"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "bolt",
+  "name": "台灣Bolt",
+  "aliases": [],
+  "cats": [
+   "transport"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "taiwan_ev_fast",
+  "name": "全國特急電",
+  "aliases": [],
+  "cats": [
+   "ev-charging"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "fuguo_gas",
+  "name": "全國加油",
+  "aliases": [],
+  "cats": [
+   "gas"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "autopass",
+  "name": "Autopass(車麻吉)",
+  "aliases": [],
+  "cats": [
+   "parking"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "poya",
+  "name": "寶雅",
+  "aliases": [],
+  "cats": [
+   "drugstore"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "xingyi",
+  "name": "杏一醫療",
+  "aliases": [],
+  "cats": [
+   "drugstore"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "dingding",
+  "name": "丁丁藥局",
+  "aliases": [],
+  "cats": [
+   "drugstore"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "youquan",
+  "name": "佑全保健藥妝",
+  "aliases": [],
+  "cats": [
+   "drugstore"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "jiankang",
+  "name": "健康人生藥局",
+  "aliases": [],
+  "cats": [
+   "drugstore"
+  ],
+  "sources": [
+   "richart:天天刷"
+  ]
+ },
+ {
+  "id": "fe_dept",
+  "name": "遠東百貨",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "hanshin_intercontinental",
+  "name": "漢神洲際",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "sanchuang",
+  "name": "三創生活",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "uni_times",
+  "name": "統一時代",
+  "aliases": [],
+  "cats": [
+   "department-store"
+  ],
+  "sources": [
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "tele",
+  "name": "特力屋",
+  "aliases": [],
+  "cats": [
+   "home"
+  ],
+  "sources": [
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "hola",
+  "name": "HOLA",
+  "aliases": [],
+  "cats": [
+   "home"
+  ],
+  "sources": [
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "nitori",
+  "name": "宜得利",
+  "aliases": [],
+  "cats": [
+   "home"
+  ],
+  "sources": [
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "marais",
+  "name": "瑪黑家居",
+  "aliases": [],
+  "cats": [
+   "home"
+  ],
+  "sources": [
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "uniqlo",
+  "name": "UNIQLO",
+  "aliases": [],
+  "cats": [
+   "fashion"
+  ],
+  "sources": [
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "gu",
+  "name": "GU",
+  "aliases": [],
+  "cats": [
+   "fashion"
+  ],
+  "sources": [
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "zara",
+  "name": "ZARA",
+  "aliases": [],
+  "cats": [
+   "fashion"
+  ],
+  "sources": [
+   "richart:大筆刷"
+  ]
+ },
+ {
+  "id": "lululemon",
+  "name": "lululemon",
+  "aliases": [],
+  "cats": [
+   "fashion"
+  ],
+  "sources": [
+   "richart:大筆刷",
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "tw_dining",
+  "name": "全臺餐飲(MCC餐廳類)",
+  "aliases": [
+   "國內餐廳"
+  ],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "wowprime_pay",
+  "name": "王品瘋Pay",
+  "aliases": [],
+  "cats": [
+   "dining",
+   "mobilepay"
+  ],
+  "sources": [
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "tixcraft",
+  "name": "拓元售票",
+  "aliases": [],
+  "cats": [
+   "ticketing",
+   "entertainment"
+  ],
+  "sources": [
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "kktix",
+  "name": "KKTIX",
+  "aliases": [],
+  "cats": [
+   "ticketing",
+   "entertainment"
+  ],
+  "sources": [
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "ticket_era",
+  "name": "年代售票",
+  "aliases": [],
+  "cats": [
+   "ticketing",
+   "entertainment"
+  ],
+  "sources": [
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "kham",
+  "name": "寬宏售票",
+  "aliases": [],
+  "cats": [
+   "ticketing",
+   "entertainment"
+  ],
+  "sources": [
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "opentix",
+  "name": "OPENTIX兩廳院",
+  "aliases": [],
+  "cats": [
+   "ticketing",
+   "entertainment"
+  ],
+  "sources": [
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "hotels_tw",
+  "name": "指定飯店(晶華/晶英/捷絲旅/君品/萬豪/W等60+)",
+  "aliases": [],
+  "cats": [
+   "hotel"
+  ],
+  "sources": [
+   "richart:好饗刷"
+  ]
+ },
+ {
+  "id": "amazon",
+  "name": "Amazon",
+  "aliases": [],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "etmall",
+  "name": "東森購物",
+  "aliases": [],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "books",
+  "name": "博客來",
+  "aliases": [],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "payeasy",
+  "name": "PayEasy",
+  "aliases": [],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "iherb",
+  "name": "iHerb",
+  "aliases": [],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "shein",
+  "name": "SHEIN",
+  "aliases": [],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "farfetch",
+  "name": "Farfetch",
+  "aliases": [],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "oliveyoung",
+  "name": "Olive Young",
+  "aliases": [],
+  "cats": [
+   "ecommerce"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "knowledge_sat",
+  "name": "知識衛星",
+  "aliases": [],
+  "cats": [
+   "education"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "amazingtalker",
+  "name": "Amazing Talker",
+  "aliases": [],
+  "cats": [
+   "education"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "tutorabc",
+  "name": "Tutor ABC",
+  "aliases": [],
+  "cats": [
+   "education"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "hahow",
+  "name": "Hahow",
+  "aliases": [],
+  "cats": [
+   "education"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "pressplay",
+  "name": "PressPlay",
+  "aliases": [],
+  "cats": [
+   "education"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "mycard",
+  "name": "MyCard",
+  "aliases": [],
+  "cats": [
+   "gaming"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "gamania",
+  "name": "遊戲橘子",
+  "aliases": [],
+  "cats": [
+   "gaming"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "steam",
+  "name": "Steam",
+  "aliases": [],
+  "cats": [
+   "gaming"
+  ],
+  "sources": [
+   "richart:數趣刷"
+  ]
+ },
+ {
+  "id": "wowpass",
+  "name": "WOWPASS",
+  "aliases": [],
+  "cats": [
+   "transport",
+   "overseas"
+  ],
+  "sources": [
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "airsim",
+  "name": "AIRSIM",
+  "aliases": [],
+  "cats": [
+   "telecom",
+   "overseas"
+  ],
+  "sources": [
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "hotels_com",
+  "name": "Hotels.com",
+  "aliases": [],
+  "cats": [
+   "booking-platform",
+   "travel"
+  ],
+  "sources": [
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "expedia",
+  "name": "Expedia",
+  "aliases": [],
+  "cats": [
+   "booking-platform",
+   "travel"
+  ],
+  "sources": [
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "hsiung_hsing",
+  "name": "喜鴻假期",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "galilee",
+  "name": "加利利旅行社",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "xingjian",
+  "name": "行健旅遊",
+  "aliases": [],
+  "cats": [
+   "travel-agency",
+   "travel"
+  ],
+  "sources": [
+   "richart:玩旅刷"
+  ]
+ },
+ {
+  "id": "holiday_all",
+  "name": "國內節假日不限通路",
+  "aliases": [],
+  "cats": [
+   "general"
+  ],
+  "sources": [
+   "richart:假日刷"
+  ]
+ },
+ {
+  "id": "wanke",
+  "name": "萬客什鍋",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "haidilao",
+  "name": "海底撈",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "xincun",
+  "name": "新村站著吃",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "masamune",
+  "name": "燒肉政宗",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "tanzuo",
+  "name": "碳佐麻里",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "chickensoup_uncle",
+  "name": "雞湯大叔",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "gonna",
+  "name": "gonna共樂遊",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "inparadise",
+  "name": "饗賓INPARADISE",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "nagomi",
+  "name": "NAGOMI",
+  "aliases": [],
+  "cats": [
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "t50",
+  "name": "50嵐",
+  "aliases": [],
+  "cats": [
+   "drink",
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "dezheng",
+  "name": "得正",
+  "aliases": [],
+  "cats": [
+   "drink",
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "bayao",
+  "name": "八曜和茶",
+  "aliases": [],
+  "cats": [
+   "drink",
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "wutong",
+  "name": "五桐號",
+  "aliases": [],
+  "cats": [
+   "drink",
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "guiji",
+  "name": "龜記",
+  "aliases": [],
+  "cats": [
+   "drink",
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "chashou",
+  "name": "茶之魔手",
+  "aliases": [],
+  "cats": [
+   "drink",
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "ugtea",
+  "name": "UG TEA",
+  "aliases": [],
+  "cats": [
+   "drink",
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "dingge",
+  "name": "叮哥茶飲",
+  "aliases": [],
+  "cats": [
+   "drink",
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "cafen",
+  "name": "CAFE!N",
+  "aliases": [],
+  "cats": [
+   "drink",
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "arabica",
+  "name": "%Arabica",
+  "aliases": [],
+  "cats": [
+   "drink",
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "compose",
+  "name": "COMPOSE COFFEE",
+  "aliases": [],
+  "cats": [
+   "drink",
+   "dining"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "weverse",
+  "name": "WEVERSE",
+  "aliases": [],
+  "cats": [
+   "fandom",
+   "entertainment"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "kmonstar",
+  "name": "K-MONSTAR",
+  "aliases": [],
+  "cats": [
+   "fandom",
+   "entertainment"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "weilek",
+  "name": "微樂客",
+  "aliases": [],
+  "cats": [
+   "fandom",
+   "entertainment"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "five_music",
+  "name": "五大唱片",
+  "aliases": [],
+  "cats": [
+   "fandom",
+   "entertainment"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "fairytree",
+  "name": "仙女樹",
+  "aliases": [],
+  "cats": [
+   "fandom",
+   "entertainment"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "fanme",
+  "name": "FANME",
+  "aliases": [],
+  "cats": [
+   "fandom",
+   "entertainment"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "nol",
+  "name": "NOL",
+  "aliases": [],
+  "cats": [
+   "fandom",
+   "entertainment"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "bookwalker",
+  "name": "BOOK WALKER",
+  "aliases": [],
+  "cats": [
+   "digital",
+   "streaming"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "animate",
+  "name": "Animate",
+  "aliases": [],
+  "cats": [
+   "digital",
+   "streaming"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "kobo",
+  "name": "樂天KOBO",
+  "aliases": [],
+  "cats": [
+   "digital",
+   "streaming"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "readmoo",
+  "name": "Readmoo讀墨",
+  "aliases": [],
+  "cats": [
+   "digital",
+   "streaming"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "elta",
+  "name": "愛爾達",
+  "aliases": [],
+  "cats": [
+   "digital",
+   "streaming"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "apple_store",
+  "name": "Apple直營",
+  "aliases": [],
+  "cats": [
+   "electronics"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "studio_a",
+  "name": "Studio A",
+  "aliases": [],
+  "cats": [
+   "electronics"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "dji",
+  "name": "DJI",
+  "aliases": [],
+  "cats": [
+   "electronics"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "insta360",
+  "name": "Insta360",
+  "aliases": [],
+  "cats": [
+   "electronics"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "gopro",
+  "name": "GoPro",
+  "aliases": [],
+  "cats": [
+   "electronics"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "hhbio",
+  "name": "好好生醫",
+  "aliases": [],
+  "cats": [
+   "health"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "haozaihu",
+  "name": "好在乎",
+  "aliases": [],
+  "cats": [
+   "health"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "nutri_meal",
+  "name": "營養師輕食",
+  "aliases": [],
+  "cats": [
+   "health"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "vitabox",
+  "name": "VITABOX",
+  "aliases": [],
+  "cats": [
+   "health"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "myprotein",
+  "name": "MYPROTEIN",
+  "aliases": [],
+  "cats": [
+   "health"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "urmart",
+  "name": "UrMart優馬選品",
+  "aliases": [],
+  "cats": [
+   "health"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "anytime",
+  "name": "Anytime Fitness",
+  "aliases": [],
+  "cats": [
+   "fitness"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "fitness_factory",
+  "name": "健身工廠",
+  "aliases": [],
+  "cats": [
+   "fitness"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "world_gym",
+  "name": "World Gym",
+  "aliases": [],
+  "cats": [
+   "fitness"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "hypercore",
+  "name": "超核心Hypercore",
+  "aliases": [],
+  "cats": [
+   "fitness"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "kx",
+  "name": "KX PILATES",
+  "aliases": [],
+  "cats": [
+   "fitness"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "xutie",
+  "name": "虛鐵健身",
+  "aliases": [],
+  "cats": [
+   "fitness"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "fit17",
+  "name": "17FIT",
+  "aliases": [],
+  "cats": [
+   "fitness"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "adidas",
+  "name": "Adidas",
+  "aliases": [],
+  "cats": [
+   "sportswear",
+   "fashion"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "nb",
+  "name": "New Balance",
+  "aliases": [],
+  "cats": [
+   "sportswear",
+   "fashion"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "puma",
+  "name": "PUMA",
+  "aliases": [],
+  "cats": [
+   "sportswear",
+   "fashion"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "onitsuka",
+  "name": "Onitsuka Tiger",
+  "aliases": [],
+  "cats": [
+   "sportswear",
+   "fashion"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "nike",
+  "name": "Nike",
+  "aliases": [],
+  "cats": [
+   "sportswear",
+   "fashion"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "hoka",
+  "name": "HOKA",
+  "aliases": [],
+  "cats": [
+   "sportswear",
+   "fashion"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "salomon",
+  "name": "Salomon",
+  "aliases": [],
+  "cats": [
+   "sportswear",
+   "fashion"
+  ],
+  "sources": [
+   "richart:Chill刷"
+  ]
+ },
+ {
+  "id": "easycard_autoload",
+  "name": "悠遊卡自動加值",
+  "aliases": [
+   "悠遊卡加值"
+  ],
+  "cats": [
+   "transport",
+   "topup"
+  ],
+  "sources": [
+   "dawho:大戶/大戶Plus"
+  ]
+ }
+]
