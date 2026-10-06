@@ -1,0 +1,8 @@
+{
+  "name": "card-picker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/"
+  }
+}
