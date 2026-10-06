@@ -19,7 +19,6 @@
 - 當月已刷金額追蹤
 - 定位偵測店家
 - 行動支付本身回饋（街口幣、全點等）與信用卡回饋疊加
-- 實體卡與 Apple Pay 分開計算（合併為 `card`）
 - 多人共用後端；各使用者狀態只存在自己瀏覽器
 
 ## 架構
@@ -48,12 +47,15 @@ card-picker/
 {
   "updated": "2026-10-06",
   "payments": [
-    { "id": "card",    "name": "信用卡/Apple Pay" },
-    { "id": "linepay", "name": "LINE Pay" },
-    { "id": "jkopay",  "name": "街口" },
-    { "id": "pxpay",   "name": "全支付" }
+    { "id": "card",     "name": "實體卡" },
+    { "id": "applepay", "name": "Apple Pay" },
+    { "id": "linepay",  "name": "LINE Pay" },
+    { "id": "jkopay",   "name": "街口" },
+    { "id": "pxpay",    "name": "全支付" },
+    { "id": "taishinpay", "name": "台新Pay" }
   ],
   "merchants": [
+    { "id": "overseas-jp", "name": "海外・日本", "aliases": ["日本", "japan"], "cats": ["overseas", "overseas-offline", "overseas-jp"] },
     { "id": "pxmart", "name": "全聯", "aliases": ["全聯", "pxmart"], "cats": ["supermarket"] }
   ],
   "cards": [
@@ -64,11 +66,11 @@ card-picker/
     }
   ],
   "rules": [
-    { "card": "cube", "title": "基本回饋", "rate": 0.3, "general": true, "payments": ["card"] },
+    { "card": "cube", "title": "基本回饋", "rate": 0.3, "general": true, "payments": ["card", "applepay"] },
     {
       "card": "cube", "plan": "jingxuan", "title": "集精選", "rate": 2.0,
       "merchants": ["pxmart"], "cats": [], "excludeMerchants": [],
-      "payments": ["card", "pxpay"],
+      "payments": ["card", "applepay", "pxpay"], "days": [0, 6],
       "conditions": [ { "tag": "需登錄", "text": "每月需登錄" } ],
       "cap": null, "validFrom": null, "validThrough": "2026-12-31"
     }
@@ -84,6 +86,7 @@ card-picker/
 | merchant | `id`, `name` | ✓ | 店家 |
 | merchant | `aliases` | | 搜尋用別名，比對時轉小寫 |
 | merchant | `cats` | | 類別 id 陣列 |
+| merchant | `popular` | | `true` 則顯示在常用店家按鈕列 |
 | card | `id`, `bank`, `name`, `lastVerified` | ✓ | `lastVerified` 為 `YYYY-MM-DD` |
 | card | `officialUrl` | | 官網連結 |
 | card | `plans` | | 有此欄位即為方案卡；方案卡一律每天可切換一次 |
@@ -91,12 +94,39 @@ card-picker/
 | rule | `plan` | | 有則僅在該方案啟用時適用；無則任何方案都適用 |
 | rule | `general` | | `true` 表示任何店家（含「一般消費」）都適用 |
 | rule | `merchants`, `cats` | | 指定店家 / 類別 |
-| rule | `excludeMerchants` | | 排除店家（對 `general` 與 `cats` 也生效） |
+| rule | `excludeMerchants`, `excludeCats` | | 排除店家 / 類別（對 `general` 與 `cats` 也生效） |
 | rule | `conditions` | | `[{tag, text}]`，僅顯示，不參與計算 |
 | rule | `cap` | | 保留，v1 不計算 |
 | rule | `validFrom`, `validThrough` | | `YYYY-MM-DD` 或 `null`，含首尾日 |
+| rule | `days` | | 星期幾適用，`0`=週日…`6`=週六；例如週末為 `[0, 6]`；省略表示每天 |
 
 規則需至少有 `general: true`、非空 `merchants` 或非空 `cats` 其中之一。
+
+**海外消費**：資料中固定有以下海外店家，`cats` 一律含 `overseas`：
+
+| id | 名稱 | cats |
+|---|---|---|
+| `overseas-jp` | 海外・日本 | `overseas`, `overseas-offline`, `overseas-jp` |
+| `overseas-kr` | 海外・韓國 | `overseas`, `overseas-offline`, `overseas-kr` |
+| `overseas-th` | 海外・泰國 | `overseas`, `overseas-offline`, `overseas-th` |
+| `overseas-sg` | 海外・新加坡 | `overseas`, `overseas-offline`, `overseas-sg` |
+| `overseas-us` | 海外・美國 | `overseas`, `overseas-offline`, `overseas-us` |
+| `overseas-eu` | 海外・歐洲 | `overseas`, `overseas-offline`, `overseas-eu` |
+| `overseas-other` | 海外・其他國家 | `overseas`, `overseas-offline` |
+| `overseas-online` | 海外線上 | `overseas` |
+
+- 所有海外：`cats: ["overseas"]`；限海外實體：`cats: ["overseas-offline"]`；限特定國家：`cats: ["overseas-jp"]`。
+- `general` 規則同樣適用於海外；若某卡的一般回饋不含海外，於該規則加 `excludeCats: ["overseas"]`。
+
+**依店家類型判定的規則**（例如 Richart 好饗刷「收單機構設定為餐廳」）：以通用店家表達，例如 `{ "id": "dining-other", "name": "餐廳（其他）", "cats": ["dining"] }`。
+
+### 資料填寫慣例
+
+- `rate` 一律填**加總後的總回饋率**（基本 + 加碼），不另做疊加計算。例如 DAWHO 國外填 2。
+- 點數、哩程卡以固定估值換算成 % 填入，例如長榮聯名卡國內 2%、國外 3%。
+- **等級不做成設定，直接鎖定**：CUBE 以 Level 2、Richart 以 Level 2、DAWHO 以「大大」等級填寫回饋率。等級以外的條件（自動扣繳等）寫在卡片說明。
+- 月消費門檻、生日月、集章、國定假日等無法計算的條件，寫成 `conditions` 標籤。
+- 初始店家清單來自國泰 CUBE、台新 Richart、永豐官網列出的指定通路（彙整約 324 筆，實作時清理 id、名稱與別名）。
 
 ## 推薦引擎（`engine.js`）
 
@@ -114,9 +144,10 @@ recommend(data, { payments, merchantId, ownedCardIds, planState, today })
 1. `rule.payments` 包含 `paymentId`
 2. `rule.plan` 不存在，或等於 `planId`
 3. 日期：`validFrom ≤ today ≤ validThrough`（`null` 視為無限）
-4. 店家：
+4. 星期：`days` 不存在，或包含 `today` 的星期幾
+5. 店家：
    - 「一般消費」：僅 `general: true`
-   - 指定店家：`merchant.id` 不在 `excludeMerchants`，且（`general` 或 `merchants` 含該店 或 `cats` 與店家 `cats` 有交集）
+   - 指定店家：`merchant.id` 不在 `excludeMerchants`、店家 `cats` 與 `excludeCats` 無交集，且（`general` 或 `merchants` 含該店 或 `cats` 與店家 `cats` 有交集）
 
 ### 每個「卡 × 付款方式」組合
 
@@ -146,8 +177,8 @@ recommend(data, { payments, merchantId, ownedCardIds, planState, today })
 
 ## 介面（`app.js`）
 
-1. **步驟 1：付款方式** — 多選 + 「全選」，預設全選；每次開啟重置為全選。
-2. **步驟 2：店家** — 搜尋框（比對 `name` 與 `aliases`，子字串、不分大小寫）+ 店家按鈕，第一顆固定為「一般消費」。
+1. **步驟 1：付款方式** — 實體卡、Apple Pay、LINE Pay、街口、全支付、台新Pay 多選 + 「全選」，預設全選；每次開啟重置為全選。
+2. **步驟 2：店家** — 以搜尋框為主（比對 `name` 與 `aliases`，子字串、不分大小寫）。下方固定按鈕：「一般消費」「海外消費」（點開選國家／海外線上），加上一排常用店家（資料中 `popular: true` 的店家）。
 3. **結果** — 點店家即時渲染；每列顯示：名次、卡名 × 付款方式、回饋率、規則名、條件標籤、到期日、⚠ 資料可能過期、方案狀態；`switch` 列附「我切了」按鈕（將 `currentPlan` 設為建議方案、`lastSwitchDate` 設為今天，重新渲染）。
 4. **我的卡** — 勾選持有卡片；方案卡另有「目前方案」下拉與「今天已切過」勾選框。改下拉時自動勾選今天已切過（可手動取消）。
 
@@ -179,6 +210,9 @@ recommend(data, { payments, merchantId, ownedCardIds, planState, today })
 - `general` / `merchants` / `cats` 命中；`excludeMerchants` 排除
 - 「一般消費」只套 `general`
 - `validFrom` / `validThrough` 邊界（含首尾日）
+- `days`：週末規則於週六、週日適用，平日不適用
+- 同卡實體卡與 Apple Pay 回饋不同時分開列出
+- 海外消費：`overseas` / `overseas-offline` / `overseas-jp` 分別命中正確的海外店家；`overseas-online` 不命中 `overseas-offline` 規則；`general` 適用；`excludeCats: ["overseas"]` 排除
 - 只列出持有的卡
 - 方案卡：目前方案最佳 → `now`；未切且他方案較佳 → `switch`；已切且他方案較佳 → `now` + `tomorrow`；跨日後 `lastSwitchDate` 為昨天 → 可切；未設定目前方案
 - 排序與同分規則
@@ -187,9 +221,11 @@ recommend(data, { payments, merchantId, ownedCardIds, planState, today })
 `tests/data.test.js`（驗證真實 `data/cards.json`）：
 
 - 所有 id 唯一；規則引用的 `card`、`plan`、`merchants`、`excludeMerchants`、`payments` 都存在
-- 日期格式正確；`rate` 為非負數字；`payments` 非空
+- 每個店家 `name` 非空
+- 日期格式正確；`rate` 為非負數字；`payments` 非空；`days` 值介於 0–6
+- 上表 8 個海外店家都存在
 - 方案卡 `plans` 非空且方案 id 唯一；每條規則至少有一種店家適用方式
 
 ## 初始資料
 
-放 2–3 張範例卡（含 1 張方案卡），`title` 標示「範例」，數字非真實，由維護者替換為官網查證後的資料。
+六張卡：國泰 CUBE、台新 Richart、永豐 DAWHO、國泰長榮聯名卡、聯邦吉鶴卡、星展 eco 永續卡。依 2026-10-06 調查結果填入，`lastVerified` 標示查證日。調查中標為「未驗證」的規則（例如吉鶴卡 Apple Pay QUICPay 加碼、CUBE 週四外食加碼）加上 `{ "tag": "待確認" }` 條件，由維護者對照官網後移除。已過期活動（Richart Chill刷、eco 摘星啟程）不收錄。
