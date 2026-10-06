@@ -1,0 +1,3043 @@
+{
+  "updated": "2026-10-06",
+  "payments": [
+    {
+      "id": "card",
+      "name": "實體卡"
+    },
+    {
+      "id": "applepay",
+      "name": "Apple Pay"
+    },
+    {
+      "id": "linepay",
+      "name": "LINE Pay"
+    },
+    {
+      "id": "jkopay",
+      "name": "街口"
+    },
+    {
+      "id": "pxpay",
+      "name": "全支付"
+    },
+    {
+      "id": "taishinpay",
+      "name": "台新Pay"
+    }
+  ],
+  "merchants": [
+    {
+      "id": "overseas-jp",
+      "name": "海外・日本",
+      "aliases": [
+        "日本",
+        "japan"
+      ],
+      "cats": [
+        "overseas",
+        "overseas-offline",
+        "overseas-jp"
+      ]
+    },
+    {
+      "id": "overseas-kr",
+      "name": "海外・韓國",
+      "aliases": [
+        "韓國",
+        "korea"
+      ],
+      "cats": [
+        "overseas",
+        "overseas-offline",
+        "overseas-kr"
+      ]
+    },
+    {
+      "id": "overseas-th",
+      "name": "海外・泰國",
+      "aliases": [
+        "泰國",
+        "thailand"
+      ],
+      "cats": [
+        "overseas",
+        "overseas-offline",
+        "overseas-th"
+      ]
+    },
+    {
+      "id": "overseas-sg",
+      "name": "海外・新加坡",
+      "aliases": [
+        "新加坡",
+        "singapore"
+      ],
+      "cats": [
+        "overseas",
+        "overseas-offline",
+        "overseas-sg"
+      ]
+    },
+    {
+      "id": "overseas-us",
+      "name": "海外・美國",
+      "aliases": [
+        "美國",
+        "usa"
+      ],
+      "cats": [
+        "overseas",
+        "overseas-offline",
+        "overseas-us"
+      ]
+    },
+    {
+      "id": "overseas-eu",
+      "name": "海外・歐洲",
+      "aliases": [
+        "歐洲",
+        "europe"
+      ],
+      "cats": [
+        "overseas",
+        "overseas-offline",
+        "overseas-eu"
+      ]
+    },
+    {
+      "id": "overseas-other",
+      "name": "海外・其他國家",
+      "aliases": [
+        "海外",
+        "國外"
+      ],
+      "cats": [
+        "overseas",
+        "overseas-offline"
+      ]
+    },
+    {
+      "id": "overseas-online",
+      "name": "海外線上",
+      "aliases": [
+        "海外網購",
+        "國外網站"
+      ],
+      "cats": [
+        "overseas"
+      ]
+    },
+    {
+      "id": "dining-other",
+      "name": "餐廳（其他）",
+      "aliases": [
+        "餐廳",
+        "吃飯",
+        "外食"
+      ],
+      "cats": [
+        "dining"
+      ]
+    },
+    {
+      "id": "tesla",
+      "name": "Tesla",
+      "aliases": [
+        "特斯拉"
+      ],
+      "cats": [
+        "ev"
+      ]
+    },
+    {
+      "id": "gogoro",
+      "name": "Gogoro 電池資費",
+      "aliases": [
+        "gogoro"
+      ],
+      "cats": [
+        "ev"
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "aliases": [
+        "OpenAI"
+      ],
+      "cats": [
+        "ai"
+      ]
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "aliases": [
+        "Canvas"
+      ],
+      "cats": [
+        "ai"
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "aliases": [
+        "Anthropic"
+      ],
+      "cats": [
+        "ai"
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "aliases": [],
+      "cats": [
+        "ai"
+      ]
+    },
+    {
+      "id": "duolingo",
+      "name": "Duolingo",
+      "aliases": [],
+      "cats": [
+        "ai",
+        "education"
+      ]
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "aliases": [],
+      "cats": [
+        "ai"
+      ]
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "aliases": [
+        "Google Gemini"
+      ],
+      "cats": [
+        "ai"
+      ]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "aliases": [],
+      "cats": [
+        "ai"
+      ]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "aliases": [],
+      "cats": [
+        "ai"
+      ]
+    },
+    {
+      "id": "speak",
+      "name": "Speak",
+      "aliases": [],
+      "cats": [
+        "ai",
+        "education"
+      ]
+    },
+    {
+      "id": "apple_media",
+      "name": "Apple媒體服務",
+      "aliases": [
+        "App Store",
+        "iCloud",
+        "Apple Music"
+      ],
+      "cats": [
+        "streaming",
+        "digital"
+      ]
+    },
+    {
+      "id": "google_play",
+      "name": "Google Play",
+      "aliases": [],
+      "cats": [
+        "digital"
+      ]
+    },
+    {
+      "id": "disney_plus",
+      "name": "Disney+",
+      "aliases": [
+        "迪士尼+"
+      ],
+      "cats": [
+        "streaming"
+      ]
+    },
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "aliases": [
+        "網飛"
+      ],
+      "cats": [
+        "streaming"
+      ]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "aliases": [],
+      "cats": [
+        "streaming"
+      ]
+    },
+    {
+      "id": "youtube_premium",
+      "name": "YouTube Premium",
+      "aliases": [],
+      "cats": [
+        "streaming"
+      ]
+    },
+    {
+      "id": "max",
+      "name": "Max",
+      "aliases": [
+        "HBO Max"
+      ],
+      "cats": [
+        "streaming"
+      ]
+    },
+    {
+      "id": "shopee",
+      "name": "蝦皮購物",
+      "aliases": [
+        "蝦皮",
+        "Shopee"
+      ],
+      "cats": [
+        "ecommerce"
+      ],
+      "popular": true
+    },
+    {
+      "id": "momo",
+      "name": "momo購物網",
+      "aliases": [
+        "momo",
+        "富邦momo"
+      ],
+      "cats": [
+        "ecommerce"
+      ],
+      "popular": true
+    },
+    {
+      "id": "pchome",
+      "name": "PChome 24h購物",
+      "aliases": [
+        "PChome",
+        "24h"
+      ],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "xiaoshu",
+      "name": "小樹購",
+      "aliases": [],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "coupang",
+      "name": "Coupang酷澎",
+      "aliases": [
+        "酷澎"
+      ],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "taobao",
+      "name": "淘寶/天貓",
+      "aliases": [
+        "淘寶",
+        "天貓",
+        "Tmall"
+      ],
+      "cats": [
+        "ecommerce",
+        "overseas-ecommerce"
+      ]
+    },
+    {
+      "id": "fe_sogo",
+      "name": "遠東SOGO",
+      "aliases": [
+        "SOGO",
+        "崇光"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "skm",
+      "name": "新光三越",
+      "aliases": [
+        "新光",
+        "SKM"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "fe_garden_city",
+      "name": "遠東Garden City",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "taipei101",
+      "name": "台北101",
+      "aliases": [
+        "101購物中心"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "bellavita",
+      "name": "BELLAVITA",
+      "aliases": [
+        "寶麗廣場"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "breeze",
+      "name": "微風廣場",
+      "aliases": [
+        "微風"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "uni_times_taipei",
+      "name": "統一時代台北店",
+      "aliases": [
+        "統一時代"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "eslite",
+      "name": "誠品生活",
+      "aliases": [
+        "誠品"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "att4fun",
+      "name": "ATT 4 FUN",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "q_square",
+      "name": "京站",
+      "aliases": [
+        "京站時尚廣場"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "miramar",
+      "name": "美麗華",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "noke",
+      "name": "NOKE忠泰",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "lifestyle_mall",
+      "name": "樂生活",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "takashimaya",
+      "name": "大葉高島屋",
+      "aliases": [
+        "高島屋"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "lalaport",
+      "name": "Mitsui LaLaport",
+      "aliases": [
+        "LaLaport",
+        "三井LaLaport"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "hhh_plaza",
+      "name": "宏匯廣場",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "taimall",
+      "name": "台茂",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "dajiang",
+      "name": "大江購物",
+      "aliases": [
+        "大江"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "bigcity",
+      "name": "Big City",
+      "aliases": [
+        "遠東Big City"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "fe_bigcity_hsinchu",
+      "name": "遠東巨城",
+      "aliases": [
+        "巨城"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "zhongyou",
+      "name": "中友百貨",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "guangsan_sogo",
+      "name": "廣三SOGO",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "tainan_mall",
+      "name": "南紡購物中心",
+      "aliases": [
+        "南紡"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "nice_plaza",
+      "name": "耐斯廣場",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "dream_mall",
+      "name": "夢時代",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "hanshin",
+      "name": "漢神百貨",
+      "aliases": [
+        "漢神"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "hanshin_arena",
+      "name": "漢神巨蛋",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "xinyue",
+      "name": "新月廣場",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "citylink",
+      "name": "CITYLINK",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "showtime_life",
+      "name": "秀泰生活",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "global_mall",
+      "name": "環球購物中心",
+      "aliases": [
+        "環球購物"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "pacific",
+      "name": "太平洋百貨",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "hwatai",
+      "name": "華泰名品城",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "skm_park",
+      "name": "SKM Park Outlets",
+      "aliases": [
+        "SKM Park"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "mitsui_outlet",
+      "name": "MITSUI OUTLET PARK",
+      "aliases": [
+        "三井Outlet"
+      ],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "ubereats",
+      "name": "Uber Eats",
+      "aliases": [
+        "優食"
+      ],
+      "cats": [
+        "food-delivery"
+      ],
+      "popular": true
+    },
+    {
+      "id": "foodpanda",
+      "name": "foodpanda",
+      "aliases": [
+        "熊貓"
+      ],
+      "cats": [
+        "food-delivery"
+      ],
+      "popular": true
+    },
+    {
+      "id": "mcdonalds",
+      "name": "麥當勞",
+      "aliases": [
+        "McDonald's"
+      ],
+      "cats": [
+        "dining",
+        "fastfood"
+      ],
+      "popular": true
+    },
+    {
+      "id": "cosmed",
+      "name": "康是美",
+      "aliases": [],
+      "cats": [
+        "drugstore"
+      ]
+    },
+    {
+      "id": "watsons",
+      "name": "屈臣氏",
+      "aliases": [
+        "Watsons"
+      ],
+      "cats": [
+        "drugstore"
+      ]
+    },
+    {
+      "id": "tokyo_disney",
+      "name": "東京迪士尼樂園",
+      "aliases": [
+        "東京迪士尼"
+      ],
+      "cats": [
+        "travel",
+        "theme-park",
+        "overseas",
+        "overseas-offline",
+        "overseas-jp"
+      ]
+    },
+    {
+      "id": "usj",
+      "name": "大阪環球影城",
+      "aliases": [
+        "USJ"
+      ],
+      "cats": [
+        "travel",
+        "theme-park",
+        "overseas",
+        "overseas-offline",
+        "overseas-jp"
+      ]
+    },
+    {
+      "id": "suica",
+      "name": "Apple錢包交通卡(Suica/PASMO/ICOCA)",
+      "aliases": [
+        "Suica",
+        "PASMO",
+        "ICOCA"
+      ],
+      "cats": [
+        "transport",
+        "overseas",
+        "overseas-offline",
+        "overseas-jp"
+      ]
+    },
+    {
+      "id": "uber",
+      "name": "Uber",
+      "aliases": [],
+      "cats": [
+        "transport"
+      ],
+      "popular": true
+    },
+    {
+      "id": "grab",
+      "name": "Grab",
+      "aliases": [],
+      "cats": [
+        "transport",
+        "overseas",
+        "overseas-offline"
+      ]
+    },
+    {
+      "id": "thsr",
+      "name": "台灣高鐵",
+      "aliases": [
+        "高鐵",
+        "THSR"
+      ],
+      "cats": [
+        "transport"
+      ]
+    },
+    {
+      "id": "yoxi",
+      "name": "yoxi台灣大車隊",
+      "aliases": [
+        "台灣大車隊",
+        "55688"
+      ],
+      "cats": [
+        "transport"
+      ]
+    },
+    {
+      "id": "irent",
+      "name": "iRent",
+      "aliases": [],
+      "cats": [
+        "transport",
+        "car-rental"
+      ]
+    },
+    {
+      "id": "hyundai_rent",
+      "name": "和運租車",
+      "aliases": [],
+      "cats": [
+        "car-rental"
+      ]
+    },
+    {
+      "id": "car_plus",
+      "name": "格上租車",
+      "aliases": [],
+      "cats": [
+        "car-rental"
+      ]
+    },
+    {
+      "id": "china_airlines",
+      "name": "中華航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "eva_air",
+      "name": "長榮航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "starlux",
+      "name": "星宇航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "tigerair",
+      "name": "台灣虎航",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "cathay_pacific",
+      "name": "國泰航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "peach",
+      "name": "樂桃航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "emirates",
+      "name": "阿聯酋航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "scoot",
+      "name": "酷航",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "jetstar",
+      "name": "捷星航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "jal",
+      "name": "日本航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "ana",
+      "name": "ANA全日空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "airasia",
+      "name": "亞洲航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "united",
+      "name": "聯合航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "sia",
+      "name": "新加坡航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "vietjet",
+      "name": "越捷航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "korean_air",
+      "name": "大韓航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "delta",
+      "name": "達美航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "turkish",
+      "name": "土耳其航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "qatar",
+      "name": "卡達航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "air_france",
+      "name": "法國航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "mandarin_airlines",
+      "name": "華信航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "uni_air",
+      "name": "立榮航空",
+      "aliases": [],
+      "cats": [
+        "airline",
+        "travel"
+      ]
+    },
+    {
+      "id": "hoshino",
+      "name": "星野集團",
+      "aliases": [],
+      "cats": [
+        "hotel",
+        "travel"
+      ]
+    },
+    {
+      "id": "disney_hotel",
+      "name": "全球迪士尼飯店",
+      "aliases": [],
+      "cats": [
+        "hotel",
+        "travel"
+      ]
+    },
+    {
+      "id": "toyoko",
+      "name": "東橫INN",
+      "aliases": [],
+      "cats": [
+        "hotel",
+        "travel"
+      ]
+    },
+    {
+      "id": "kkday",
+      "name": "KKday",
+      "aliases": [],
+      "cats": [
+        "booking-platform",
+        "travel"
+      ]
+    },
+    {
+      "id": "klook",
+      "name": "Klook",
+      "aliases": [
+        "客路"
+      ],
+      "cats": [
+        "booking-platform",
+        "travel"
+      ]
+    },
+    {
+      "id": "agoda",
+      "name": "Agoda",
+      "aliases": [],
+      "cats": [
+        "booking-platform",
+        "travel"
+      ]
+    },
+    {
+      "id": "airbnb",
+      "name": "Airbnb",
+      "aliases": [],
+      "cats": [
+        "booking-platform",
+        "travel"
+      ]
+    },
+    {
+      "id": "booking",
+      "name": "Booking.com",
+      "aliases": [],
+      "cats": [
+        "booking-platform",
+        "travel"
+      ]
+    },
+    {
+      "id": "tripcom",
+      "name": "Trip.com",
+      "aliases": [
+        "攜程"
+      ],
+      "cats": [
+        "booking-platform",
+        "travel"
+      ]
+    },
+    {
+      "id": "eztravel",
+      "name": "ezTravel易遊網",
+      "aliases": [
+        "易遊網"
+      ],
+      "cats": [
+        "booking-platform",
+        "travel",
+        "travel-agency"
+      ]
+    },
+    {
+      "id": "lion_travel",
+      "name": "雄獅旅遊",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "colatour",
+      "name": "可樂旅遊",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "settour",
+      "name": "東南旅遊",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "wufu",
+      "name": "五福旅遊",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "canstar",
+      "name": "燦星旅遊",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "fuji_travel",
+      "name": "山富旅遊",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "evergreen_holiday",
+      "name": "長汎假期",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "phoenix_travel",
+      "name": "鳳凰旅行社",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "ezfly",
+      "name": "Ezfly易飛網",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "ideal_travel",
+      "name": "理想旅遊",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "yongli_travel",
+      "name": "永利旅行社",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "sanhe_travel",
+      "name": "三賀旅行社",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "upower",
+      "name": "U-POWER",
+      "aliases": [],
+      "cats": [
+        "ev-charging"
+      ]
+    },
+    {
+      "id": "evoasis",
+      "name": "EVOASIS",
+      "aliases": [],
+      "cats": [
+        "ev-charging"
+      ]
+    },
+    {
+      "id": "evalue",
+      "name": "EVALUE",
+      "aliases": [],
+      "cats": [
+        "ev-charging"
+      ]
+    },
+    {
+      "id": "tail_icharging",
+      "name": "TAIL/iCharging",
+      "aliases": [],
+      "cats": [
+        "ev-charging"
+      ]
+    },
+    {
+      "id": "carmaji",
+      "name": "車麻吉",
+      "aliases": [],
+      "cats": [
+        "parking"
+      ]
+    },
+    {
+      "id": "utaggo",
+      "name": "uTagGo",
+      "aliases": [],
+      "cats": [
+        "parking"
+      ]
+    },
+    {
+      "id": "simplemart",
+      "name": "萬家福(樂家康)",
+      "aliases": [
+        "樂家康",
+        "Simple Mart"
+      ],
+      "cats": [
+        "supermarket"
+      ]
+    },
+    {
+      "id": "lopia",
+      "name": "LOPIA",
+      "aliases": [],
+      "cats": [
+        "supermarket"
+      ]
+    },
+    {
+      "id": "pxmart",
+      "name": "全聯福利中心",
+      "aliases": [
+        "全聯",
+        "大全聯",
+        "PX Mart"
+      ],
+      "cats": [
+        "supermarket"
+      ],
+      "popular": true
+    },
+    {
+      "id": "cpc",
+      "name": "台灣中油直營站",
+      "aliases": [
+        "中油"
+      ],
+      "cats": [
+        "gas"
+      ],
+      "popular": true
+    },
+    {
+      "id": "seven",
+      "name": "7-ELEVEN",
+      "aliases": [
+        "7-11",
+        "小七",
+        "統一超商"
+      ],
+      "cats": [
+        "convenience"
+      ],
+      "popular": true
+    },
+    {
+      "id": "familymart",
+      "name": "全家便利商店",
+      "aliases": [
+        "全家",
+        "FamilyMart"
+      ],
+      "cats": [
+        "convenience"
+      ],
+      "popular": true
+    },
+    {
+      "id": "ikea",
+      "name": "IKEA宜家家居",
+      "aliases": [
+        "IKEA",
+        "宜家"
+      ],
+      "cats": [
+        "home"
+      ]
+    },
+    {
+      "id": "playstation",
+      "name": "PlayStation",
+      "aliases": [],
+      "cats": [
+        "gaming"
+      ]
+    },
+    {
+      "id": "nintendo",
+      "name": "Nintendo",
+      "aliases": [],
+      "cats": [
+        "gaming"
+      ]
+    },
+    {
+      "id": "cashbox",
+      "name": "錢櫃KTV",
+      "aliases": [
+        "錢櫃"
+      ],
+      "cats": [
+        "ktv",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "holiday_ktv",
+      "name": "好樂迪KTV",
+      "aliases": [
+        "好樂迪"
+      ],
+      "cats": [
+        "ktv",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "starpoint_ktv",
+      "name": "星聚點KTV",
+      "aliases": [
+        "星聚點"
+      ],
+      "cats": [
+        "ktv",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "warm_ktv",
+      "name": "享溫馨KTV",
+      "aliases": [
+        "享溫馨"
+      ],
+      "cats": [
+        "ktv",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "funnow",
+      "name": "FunNow",
+      "aliases": [],
+      "cats": [
+        "booking-platform",
+        "dining"
+      ]
+    },
+    {
+      "id": "fpcc",
+      "name": "台塑石油",
+      "aliases": [],
+      "cats": [
+        "gas"
+      ]
+    },
+    {
+      "id": "taya",
+      "name": "台亞加油站",
+      "aliases": [],
+      "cats": [
+        "gas"
+      ]
+    },
+    {
+      "id": "formosa_fumao",
+      "name": "福懋加油站",
+      "aliases": [],
+      "cats": [
+        "gas"
+      ]
+    },
+    {
+      "id": "uni_speed",
+      "name": "統一速邁樂加油站",
+      "aliases": [],
+      "cats": [
+        "gas"
+      ]
+    },
+    {
+      "id": "fpg_bio",
+      "name": "台塑生醫實體門市",
+      "aliases": [],
+      "cats": [
+        "health",
+        "retail"
+      ]
+    },
+    {
+      "id": "cgbio",
+      "name": "長庚生技實體門市",
+      "aliases": [],
+      "cats": [
+        "health",
+        "retail"
+      ]
+    },
+    {
+      "id": "fp_veg",
+      "name": "台塑蔬菜實體門市",
+      "aliases": [],
+      "cats": [
+        "health",
+        "retail"
+      ]
+    },
+    {
+      "id": "fp_shop",
+      "name": "台塑購物網",
+      "aliases": [],
+      "cats": [
+        "health",
+        "retail"
+      ]
+    },
+    {
+      "id": "hilife",
+      "name": "萊爾富",
+      "aliases": [],
+      "cats": [
+        "convenience"
+      ],
+      "popular": true
+    },
+    {
+      "id": "insurance",
+      "name": "保費(國內壽險/產險)",
+      "aliases": [
+        "保險費"
+      ],
+      "cats": [
+        "insurance"
+      ]
+    },
+    {
+      "id": "richart_mart",
+      "name": "Richart Mart",
+      "aliases": [],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "net",
+      "name": "NET",
+      "aliases": [],
+      "cats": [
+        "fashion"
+      ]
+    },
+    {
+      "id": "sinon",
+      "name": "神腦",
+      "aliases": [],
+      "cats": [
+        "electronics"
+      ]
+    },
+    {
+      "id": "tsann_kuen",
+      "name": "燦坤",
+      "aliases": [],
+      "cats": [
+        "electronics"
+      ]
+    },
+    {
+      "id": "elifemall",
+      "name": "全國電子",
+      "aliases": [],
+      "cats": [
+        "electronics"
+      ]
+    },
+    {
+      "id": "simplemart_cheap",
+      "name": "美廉社",
+      "aliases": [],
+      "cats": [
+        "supermarket"
+      ]
+    },
+    {
+      "id": "dashu_pharmacy",
+      "name": "大樹藥局",
+      "aliases": [],
+      "cats": [
+        "drugstore"
+      ]
+    },
+    {
+      "id": "lawson_jp",
+      "name": "日本LAWSON",
+      "aliases": [],
+      "cats": [
+        "convenience",
+        "overseas",
+        "overseas-offline",
+        "overseas-jp"
+      ]
+    },
+    {
+      "id": "biccamera",
+      "name": "BicCamera",
+      "aliases": [],
+      "cats": [
+        "electronics",
+        "overseas",
+        "overseas-offline",
+        "overseas-jp"
+      ]
+    },
+    {
+      "id": "gs25_kr",
+      "name": "韓國GS25",
+      "aliases": [],
+      "cats": [
+        "convenience",
+        "overseas",
+        "overseas-offline",
+        "overseas-kr"
+      ]
+    },
+    {
+      "id": "daiso",
+      "name": "DAISO",
+      "aliases": [],
+      "cats": [
+        "retail"
+      ]
+    },
+    {
+      "id": "donki",
+      "name": "唐吉訶德",
+      "aliases": [],
+      "cats": [
+        "supermarket"
+      ]
+    },
+    {
+      "id": "daimaijia",
+      "name": "大買家",
+      "aliases": [],
+      "cats": [
+        "supermarket"
+      ]
+    },
+    {
+      "id": "zhishenghuo",
+      "name": "智生活",
+      "aliases": [],
+      "cats": [
+        "supermarket"
+      ]
+    },
+    {
+      "id": "tra",
+      "name": "臺鐵",
+      "aliases": [],
+      "cats": [
+        "transport"
+      ]
+    },
+    {
+      "id": "line_go",
+      "name": "LINE GO",
+      "aliases": [],
+      "cats": [
+        "transport"
+      ]
+    },
+    {
+      "id": "bolt",
+      "name": "台灣Bolt",
+      "aliases": [],
+      "cats": [
+        "transport"
+      ]
+    },
+    {
+      "id": "taiwan_ev_fast",
+      "name": "全國特急電",
+      "aliases": [],
+      "cats": [
+        "ev-charging"
+      ]
+    },
+    {
+      "id": "fuguo_gas",
+      "name": "全國加油",
+      "aliases": [],
+      "cats": [
+        "gas"
+      ]
+    },
+    {
+      "id": "autopass",
+      "name": "Autopass(車麻吉)",
+      "aliases": [],
+      "cats": [
+        "parking"
+      ]
+    },
+    {
+      "id": "poya",
+      "name": "寶雅",
+      "aliases": [],
+      "cats": [
+        "drugstore"
+      ]
+    },
+    {
+      "id": "xingyi",
+      "name": "杏一醫療",
+      "aliases": [],
+      "cats": [
+        "drugstore"
+      ]
+    },
+    {
+      "id": "dingding",
+      "name": "丁丁藥局",
+      "aliases": [],
+      "cats": [
+        "drugstore"
+      ]
+    },
+    {
+      "id": "youquan",
+      "name": "佑全保健藥妝",
+      "aliases": [],
+      "cats": [
+        "drugstore"
+      ]
+    },
+    {
+      "id": "jiankang",
+      "name": "健康人生藥局",
+      "aliases": [],
+      "cats": [
+        "drugstore"
+      ]
+    },
+    {
+      "id": "fe_dept",
+      "name": "遠東百貨",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "hanshin_intercontinental",
+      "name": "漢神洲際",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "sanchuang",
+      "name": "三創生活",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "uni_times",
+      "name": "統一時代",
+      "aliases": [],
+      "cats": [
+        "department-store"
+      ]
+    },
+    {
+      "id": "tele",
+      "name": "特力屋",
+      "aliases": [],
+      "cats": [
+        "home"
+      ]
+    },
+    {
+      "id": "hola",
+      "name": "HOLA",
+      "aliases": [],
+      "cats": [
+        "home"
+      ]
+    },
+    {
+      "id": "nitori",
+      "name": "宜得利",
+      "aliases": [],
+      "cats": [
+        "home"
+      ]
+    },
+    {
+      "id": "marais",
+      "name": "瑪黑家居",
+      "aliases": [],
+      "cats": [
+        "home"
+      ]
+    },
+    {
+      "id": "uniqlo",
+      "name": "UNIQLO",
+      "aliases": [],
+      "cats": [
+        "fashion"
+      ]
+    },
+    {
+      "id": "gu",
+      "name": "GU",
+      "aliases": [],
+      "cats": [
+        "fashion"
+      ]
+    },
+    {
+      "id": "zara",
+      "name": "ZARA",
+      "aliases": [],
+      "cats": [
+        "fashion"
+      ]
+    },
+    {
+      "id": "lululemon",
+      "name": "lululemon",
+      "aliases": [],
+      "cats": [
+        "fashion"
+      ]
+    },
+    {
+      "id": "tw_dining",
+      "name": "全臺餐飲(MCC餐廳類)",
+      "aliases": [
+        "國內餐廳"
+      ],
+      "cats": [
+        "dining"
+      ]
+    },
+    {
+      "id": "tixcraft",
+      "name": "拓元售票",
+      "aliases": [],
+      "cats": [
+        "ticketing",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "kktix",
+      "name": "KKTIX",
+      "aliases": [],
+      "cats": [
+        "ticketing",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "ticket_era",
+      "name": "年代售票",
+      "aliases": [],
+      "cats": [
+        "ticketing",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "kham",
+      "name": "寬宏售票",
+      "aliases": [],
+      "cats": [
+        "ticketing",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "opentix",
+      "name": "OPENTIX兩廳院",
+      "aliases": [],
+      "cats": [
+        "ticketing",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "hotels_tw",
+      "name": "指定飯店(晶華/晶英/捷絲旅/君品/萬豪/W等60+)",
+      "aliases": [],
+      "cats": [
+        "hotel"
+      ]
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "aliases": [],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "etmall",
+      "name": "東森購物",
+      "aliases": [],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "books",
+      "name": "博客來",
+      "aliases": [],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "payeasy",
+      "name": "PayEasy",
+      "aliases": [],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "iherb",
+      "name": "iHerb",
+      "aliases": [],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "shein",
+      "name": "SHEIN",
+      "aliases": [],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "farfetch",
+      "name": "Farfetch",
+      "aliases": [],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "oliveyoung",
+      "name": "Olive Young",
+      "aliases": [],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "knowledge_sat",
+      "name": "知識衛星",
+      "aliases": [],
+      "cats": [
+        "education"
+      ]
+    },
+    {
+      "id": "amazingtalker",
+      "name": "Amazing Talker",
+      "aliases": [],
+      "cats": [
+        "education"
+      ]
+    },
+    {
+      "id": "tutorabc",
+      "name": "Tutor ABC",
+      "aliases": [],
+      "cats": [
+        "education"
+      ]
+    },
+    {
+      "id": "hahow",
+      "name": "Hahow",
+      "aliases": [],
+      "cats": [
+        "education"
+      ]
+    },
+    {
+      "id": "pressplay",
+      "name": "PressPlay",
+      "aliases": [],
+      "cats": [
+        "education"
+      ]
+    },
+    {
+      "id": "mycard",
+      "name": "MyCard",
+      "aliases": [],
+      "cats": [
+        "gaming"
+      ]
+    },
+    {
+      "id": "gamania",
+      "name": "遊戲橘子",
+      "aliases": [],
+      "cats": [
+        "gaming"
+      ]
+    },
+    {
+      "id": "steam",
+      "name": "Steam",
+      "aliases": [],
+      "cats": [
+        "gaming"
+      ]
+    },
+    {
+      "id": "wowpass",
+      "name": "WOWPASS",
+      "aliases": [],
+      "cats": [
+        "transport",
+        "overseas",
+        "overseas-offline",
+        "overseas-kr"
+      ]
+    },
+    {
+      "id": "airsim",
+      "name": "AIRSIM",
+      "aliases": [],
+      "cats": [
+        "telecom"
+      ]
+    },
+    {
+      "id": "hotels_com",
+      "name": "Hotels.com",
+      "aliases": [],
+      "cats": [
+        "booking-platform",
+        "travel"
+      ]
+    },
+    {
+      "id": "expedia",
+      "name": "Expedia",
+      "aliases": [],
+      "cats": [
+        "booking-platform",
+        "travel"
+      ]
+    },
+    {
+      "id": "hsiung_hsing",
+      "name": "喜鴻假期",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "galilee",
+      "name": "加利利旅行社",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    },
+    {
+      "id": "xingjian",
+      "name": "行健旅遊",
+      "aliases": [],
+      "cats": [
+        "travel-agency",
+        "travel"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "cube",
+      "bank": "國泰世華",
+      "name": "CUBE 卡",
+      "lastVerified": "2026-10-06",
+      "officialUrl": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube",
+      "note": "以 Level 2（設定自動扣繳）計算",
+      "plans": [
+        {
+          "id": "digital",
+          "name": "玩數位"
+        },
+        {
+          "id": "shopping",
+          "name": "樂饗購"
+        },
+        {
+          "id": "travel",
+          "name": "趣旅行"
+        },
+        {
+          "id": "jingxuan",
+          "name": "集精選"
+        },
+        {
+          "id": "fpg",
+          "name": "台塑家"
+        },
+        {
+          "id": "pxpay",
+          "name": "全支付"
+        }
+      ]
+    },
+    {
+      "id": "richart",
+      "bank": "台新",
+      "name": "Richart 卡",
+      "lastVerified": "2026-10-06",
+      "officialUrl": "https://richart.tw/TSDIB_RichartWeb/card/credit-card",
+      "note": "以 Level 2（設定台新帳戶自動扣繳）計算",
+      "plans": [
+        {
+          "id": "daily",
+          "name": "天天刷"
+        },
+        {
+          "id": "bigspend",
+          "name": "大筆刷"
+        },
+        {
+          "id": "dining",
+          "name": "好饗刷"
+        },
+        {
+          "id": "digital",
+          "name": "數趣刷"
+        },
+        {
+          "id": "travel",
+          "name": "玩旅刷"
+        },
+        {
+          "id": "pay",
+          "name": "Pay著刷"
+        },
+        {
+          "id": "holiday",
+          "name": "假日刷"
+        }
+      ]
+    },
+    {
+      "id": "dawho",
+      "bank": "永豐",
+      "name": "DAWHO 現金回饋卡",
+      "lastVerified": "2026-10-06",
+      "officialUrl": "https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWHO.html",
+      "note": "以「大大」等級計算"
+    },
+    {
+      "id": "eva",
+      "bank": "國泰世華",
+      "name": "長榮航空聯名卡",
+      "lastVerified": "2026-10-06",
+      "officialUrl": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/eva",
+      "note": "哩程以國內 2%、國外 3% 估值"
+    },
+    {
+      "id": "jiho",
+      "bank": "聯邦",
+      "name": "吉鶴卡",
+      "lastVerified": "2026-10-06",
+      "note": "官網未能抓取，規則來自二手整理"
+    },
+    {
+      "id": "eco",
+      "bank": "星展",
+      "name": "eco 永續卡",
+      "lastVerified": "2026-10-06",
+      "officialUrl": "https://www.dbs.com.tw/personal-zh/cards/dbs_eco/index.html"
+    }
+  ],
+  "rules": [
+    {
+      "card": "cube",
+      "title": "基本回饋",
+      "rate": 0.3,
+      "general": true,
+      "payments": [
+        "card",
+        "applepay"
+      ]
+    },
+    {
+      "card": "cube",
+      "title": "基本回饋（行動支付）",
+      "rate": 0.3,
+      "general": true,
+      "payments": [
+        "linepay",
+        "jkopay",
+        "pxpay"
+      ],
+      "conditions": [
+        {
+          "tag": "待確認",
+          "text": "調查時未能對照官網確認，查證後移除此標籤"
+        }
+      ]
+    },
+    {
+      "card": "cube",
+      "plan": "digital",
+      "title": "玩數位",
+      "rate": 3,
+      "merchants": [
+        "chatgpt",
+        "canva",
+        "claude",
+        "cursor",
+        "duolingo",
+        "gamma",
+        "gemini",
+        "notion",
+        "perplexity",
+        "speak",
+        "apple_media",
+        "google_play",
+        "disney_plus",
+        "netflix",
+        "spotify",
+        "youtube_premium",
+        "max",
+        "shopee",
+        "momo",
+        "pchome",
+        "xiaoshu",
+        "coupang",
+        "taobao"
+      ],
+      "payments": [
+        "card",
+        "applepay"
+      ],
+      "validThrough": "2026-12-31"
+    },
+    {
+      "card": "cube",
+      "plan": "shopping",
+      "title": "樂饗購",
+      "rate": 3,
+      "merchants": [
+        "fe_sogo",
+        "skm",
+        "fe_garden_city",
+        "taipei101",
+        "bellavita",
+        "breeze",
+        "uni_times_taipei",
+        "eslite",
+        "att4fun",
+        "q_square",
+        "miramar",
+        "noke",
+        "lifestyle_mall",
+        "takashimaya",
+        "lalaport",
+        "hhh_plaza",
+        "taimall",
+        "dajiang",
+        "bigcity",
+        "fe_bigcity_hsinchu",
+        "zhongyou",
+        "guangsan_sogo",
+        "tainan_mall",
+        "nice_plaza",
+        "dream_mall",
+        "hanshin",
+        "hanshin_arena",
+        "xinyue",
+        "citylink",
+        "showtime_life",
+        "global_mall",
+        "pacific",
+        "hwatai",
+        "skm_park",
+        "mitsui_outlet",
+        "ubereats",
+        "foodpanda",
+        "mcdonalds",
+        "cosmed",
+        "watsons"
+      ],
+      "payments": [
+        "card",
+        "applepay"
+      ],
+      "validThrough": "2026-12-31"
+    },
+    {
+      "card": "cube",
+      "plan": "shopping",
+      "title": "樂饗購・週四外食",
+      "rate": 8,
+      "cats": [
+        "dining"
+      ],
+      "days": [
+        4
+      ],
+      "payments": [
+        "card",
+        "applepay"
+      ],
+      "validThrough": "2026-12-31",
+      "conditions": [
+        {
+          "tag": "滿額",
+          "text": "週四外食滿 NT$2,000"
+        },
+        {
+          "tag": "需登錄"
+        },
+        {
+          "tag": "待確認",
+          "text": "調查時未能對照官網確認，查證後移除此標籤"
+        }
+      ]
+    },
+    {
+      "card": "cube",
+      "plan": "travel",
+      "title": "趣旅行",
+      "rate": 3,
+      "merchants": [
+        "tokyo_disney",
+        "usj",
+        "suica",
+        "uber",
+        "grab",
+        "thsr",
+        "yoxi",
+        "irent",
+        "hyundai_rent",
+        "car_plus",
+        "china_airlines",
+        "eva_air",
+        "starlux",
+        "tigerair",
+        "cathay_pacific",
+        "peach",
+        "emirates",
+        "scoot",
+        "jetstar",
+        "jal",
+        "ana",
+        "airasia",
+        "united",
+        "sia",
+        "vietjet",
+        "korean_air",
+        "delta",
+        "turkish",
+        "qatar",
+        "air_france",
+        "hoshino",
+        "disney_hotel",
+        "toyoko",
+        "kkday",
+        "klook",
+        "agoda",
+        "airbnb",
+        "booking",
+        "tripcom",
+        "eztravel",
+        "lion_travel",
+        "colatour",
+        "settour",
+        "wufu",
+        "canstar",
+        "fuji_travel",
+        "evergreen_holiday",
+        "phoenix_travel",
+        "ezfly",
+        "ideal_travel",
+        "yongli_travel",
+        "sanhe_travel"
+      ],
+      "payments": [
+        "card",
+        "applepay"
+      ],
+      "validThrough": "2026-12-31"
+    },
+    {
+      "card": "cube",
+      "plan": "travel",
+      "title": "趣旅行・海外實體",
+      "rate": 3,
+      "cats": [
+        "overseas-offline"
+      ],
+      "payments": [
+        "card",
+        "applepay"
+      ],
+      "validThrough": "2026-12-31"
+    },
+    {
+      "card": "cube",
+      "plan": "jingxuan",
+      "title": "集精選",
+      "rate": 2,
+      "merchants": [
+        "upower",
+        "evoasis",
+        "evalue",
+        "tail_icharging",
+        "carmaji",
+        "utaggo",
+        "simplemart",
+        "lopia",
+        "pxmart",
+        "cpc",
+        "seven",
+        "familymart",
+        "ikea"
+      ],
+      "payments": [
+        "card",
+        "applepay"
+      ],
+      "validThrough": "2026-12-31"
+    },
+    {
+      "card": "cube",
+      "plan": "fpg",
+      "title": "台塑家",
+      "rate": 2,
+      "merchants": [
+        "seven",
+        "familymart",
+        "fpcc",
+        "taya",
+        "formosa_fumao",
+        "uni_speed",
+        "fpg_bio",
+        "cgbio",
+        "fp_veg",
+        "fp_shop",
+        "hilife"
+      ],
+      "payments": [
+        "card",
+        "applepay"
+      ],
+      "validThrough": "2026-12-31"
+    },
+    {
+      "card": "cube",
+      "plan": "pxpay",
+      "title": "全支付",
+      "rate": 2,
+      "general": true,
+      "payments": [
+        "pxpay"
+      ],
+      "validFrom": "2026-06-01",
+      "validThrough": "2026-12-31",
+      "conditions": [
+        {
+          "tag": "待確認",
+          "text": "調查時未能對照官網確認，查證後移除此標籤"
+        }
+      ]
+    },
+    {
+      "card": "richart",
+      "title": "基本回饋",
+      "rate": 0.3,
+      "general": true,
+      "payments": [
+        "card",
+        "applepay",
+        "linepay",
+        "jkopay",
+        "pxpay",
+        "taishinpay"
+      ]
+    },
+    {
+      "card": "richart",
+      "title": "保費",
+      "rate": 1.3,
+      "merchants": [
+        "insurance"
+      ],
+      "payments": [
+        "card"
+      ],
+      "validFrom": "2026-07-01",
+      "validThrough": "2027-03-31"
+    },
+    {
+      "card": "richart",
+      "plan": "daily",
+      "title": "天天刷",
+      "rate": 3.3,
+      "merchants": [
+        "cosmed",
+        "watsons",
+        "uber",
+        "thsr",
+        "yoxi",
+        "upower",
+        "evoasis",
+        "evalue",
+        "simplemart",
+        "lopia",
+        "cpc",
+        "seven",
+        "familymart",
+        "hilife",
+        "dashu_pharmacy",
+        "donki",
+        "daimaijia",
+        "zhishenghuo",
+        "tra",
+        "line_go",
+        "bolt",
+        "taiwan_ev_fast",
+        "fuguo_gas",
+        "autopass",
+        "poya",
+        "xingyi",
+        "dingding",
+        "youquan",
+        "jiankang"
+      ],
+      "payments": [
+        "card",
+        "applepay",
+        "taishinpay"
+      ],
+      "validFrom": "2026-07-01",
+      "validThrough": "2027-03-31"
+    },
+    {
+      "card": "richart",
+      "plan": "bigspend",
+      "title": "大筆刷",
+      "rate": 3.3,
+      "merchants": [
+        "fe_sogo",
+        "skm",
+        "taipei101",
+        "breeze",
+        "eslite",
+        "q_square",
+        "lalaport",
+        "fe_bigcity_hsinchu",
+        "zhongyou",
+        "guangsan_sogo",
+        "tainan_mall",
+        "dream_mall",
+        "hanshin",
+        "hanshin_arena",
+        "hwatai",
+        "skm_park",
+        "mitsui_outlet",
+        "ikea",
+        "fe_dept",
+        "hanshin_intercontinental",
+        "sanchuang",
+        "uni_times",
+        "tele",
+        "hola",
+        "nitori",
+        "marais",
+        "uniqlo",
+        "gu",
+        "zara",
+        "lululemon"
+      ],
+      "payments": [
+        "card",
+        "applepay",
+        "taishinpay"
+      ],
+      "validFrom": "2026-07-01",
+      "validThrough": "2027-03-31"
+    },
+    {
+      "card": "richart",
+      "plan": "dining",
+      "title": "好饗刷",
+      "rate": 3.3,
+      "merchants": [
+        "ubereats",
+        "foodpanda",
+        "cashbox",
+        "holiday_ktv",
+        "starpoint_ktv",
+        "warm_ktv",
+        "funnow",
+        "tw_dining",
+        "tixcraft",
+        "kktix",
+        "ticket_era",
+        "kham",
+        "opentix",
+        "hotels_tw"
+      ],
+      "cats": [
+        "dining"
+      ],
+      "payments": [
+        "card",
+        "applepay",
+        "taishinpay"
+      ],
+      "validFrom": "2026-07-01",
+      "validThrough": "2027-03-31"
+    },
+    {
+      "card": "richart",
+      "plan": "digital",
+      "title": "數趣刷",
+      "rate": 3.3,
+      "merchants": [
+        "chatgpt",
+        "canva",
+        "claude",
+        "notion",
+        "perplexity",
+        "disney_plus",
+        "netflix",
+        "shopee",
+        "momo",
+        "pchome",
+        "coupang",
+        "taobao",
+        "playstation",
+        "nintendo",
+        "richart_mart",
+        "amazon",
+        "etmall",
+        "books",
+        "payeasy",
+        "iherb",
+        "shein",
+        "farfetch",
+        "oliveyoung",
+        "knowledge_sat",
+        "amazingtalker",
+        "tutorabc",
+        "hahow",
+        "pressplay",
+        "mycard",
+        "gamania",
+        "steam"
+      ],
+      "payments": [
+        "card",
+        "applepay",
+        "taishinpay"
+      ],
+      "validFrom": "2026-07-01",
+      "validThrough": "2027-03-31"
+    },
+    {
+      "card": "richart",
+      "plan": "travel",
+      "title": "玩旅刷",
+      "rate": 3.3,
+      "merchants": [
+        "suica",
+        "uber",
+        "grab",
+        "china_airlines",
+        "eva_air",
+        "starlux",
+        "tigerair",
+        "cathay_pacific",
+        "peach",
+        "emirates",
+        "scoot",
+        "jetstar",
+        "jal",
+        "airasia",
+        "sia",
+        "vietjet",
+        "mandarin_airlines",
+        "uni_air",
+        "kkday",
+        "klook",
+        "agoda",
+        "airbnb",
+        "booking",
+        "tripcom",
+        "eztravel",
+        "lion_travel",
+        "colatour",
+        "settour",
+        "wufu",
+        "canstar",
+        "fuji_travel",
+        "evergreen_holiday",
+        "phoenix_travel",
+        "ezfly",
+        "wowpass",
+        "airsim",
+        "hotels_com",
+        "expedia",
+        "hsiung_hsing",
+        "galilee",
+        "xingjian"
+      ],
+      "payments": [
+        "card",
+        "applepay",
+        "taishinpay"
+      ],
+      "validFrom": "2026-07-01",
+      "validThrough": "2027-03-31"
+    },
+    {
+      "card": "richart",
+      "plan": "travel",
+      "title": "玩旅刷・海外",
+      "rate": 3.3,
+      "cats": [
+        "overseas"
+      ],
+      "payments": [
+        "card",
+        "applepay",
+        "taishinpay"
+      ],
+      "validFrom": "2026-07-01",
+      "validThrough": "2027-03-31",
+      "conditions": [
+        {
+          "tag": "待確認",
+          "text": "調查時未能對照官網確認，查證後移除此標籤"
+        }
+      ]
+    },
+    {
+      "card": "richart",
+      "plan": "pay",
+      "title": "Pay著刷・台新Pay",
+      "rate": 3.8,
+      "merchants": [
+        "skm",
+        "cosmed",
+        "seven",
+        "familymart",
+        "ikea",
+        "richart_mart",
+        "net",
+        "sinon",
+        "tsann_kuen",
+        "elifemall",
+        "simplemart_cheap",
+        "dashu_pharmacy",
+        "lawson_jp",
+        "biccamera",
+        "gs25_kr",
+        "daiso"
+      ],
+      "payments": [
+        "taishinpay"
+      ],
+      "validFrom": "2026-07-01",
+      "validThrough": "2027-03-31"
+    },
+    {
+      "card": "richart",
+      "plan": "pay",
+      "title": "Pay著刷・LINE Pay",
+      "rate": 2.3,
+      "merchants": [
+        "skm",
+        "cosmed",
+        "seven",
+        "familymart",
+        "ikea",
+        "richart_mart",
+        "net",
+        "sinon",
+        "tsann_kuen",
+        "elifemall",
+        "simplemart_cheap",
+        "dashu_pharmacy",
+        "lawson_jp",
+        "biccamera",
+        "gs25_kr",
+        "daiso"
+      ],
+      "payments": [
+        "linepay"
+      ],
+      "validFrom": "2026-07-01",
+      "validThrough": "2027-03-31"
+    },
+    {
+      "card": "richart",
+      "plan": "holiday",
+      "title": "假日刷",
+      "rate": 2,
+      "general": true,
+      "days": [
+        0,
+        6
+      ],
+      "excludeMerchants": [
+        "seven",
+        "familymart",
+        "hilife"
+      ],
+      "excludeCats": [
+        "overseas"
+      ],
+      "payments": [
+        "card",
+        "applepay",
+        "linepay",
+        "taishinpay"
+      ],
+      "validFrom": "2026-07-01",
+      "validThrough": "2027-03-31",
+      "conditions": [
+        {
+          "tag": "排除",
+          "text": "排除四大超商與繳稅"
+        },
+        {
+          "tag": "國定假日",
+          "text": "國定假日也適用，本工具只判斷週末"
+        }
+      ]
+    },
+    {
+      "card": "dawho",
+      "title": "國內一般消費",
+      "rate": 1,
+      "general": true,
+      "excludeCats": [
+        "overseas"
+      ],
+      "payments": [
+        "card",
+        "applepay",
+        "linepay",
+        "jkopay",
+        "pxpay"
+      ],
+      "validThrough": "2026-12-31",
+      "conditions": [
+        {
+          "tag": "分期不回饋"
+        }
+      ]
+    },
+    {
+      "card": "dawho",
+      "title": "國外消費",
+      "rate": 2,
+      "cats": [
+        "overseas"
+      ],
+      "payments": [
+        "card",
+        "applepay",
+        "linepay",
+        "jkopay",
+        "pxpay"
+      ],
+      "validThrough": "2026-12-31",
+      "conditions": [
+        {
+          "tag": "分期不回饋"
+        }
+      ]
+    },
+    {
+      "card": "eva",
+      "title": "國內一般消費（哩程估值）",
+      "rate": 2,
+      "general": true,
+      "excludeCats": [
+        "overseas"
+      ],
+      "payments": [
+        "card",
+        "applepay"
+      ]
+    },
+    {
+      "card": "eva",
+      "title": "國外消費（哩程估值）",
+      "rate": 3,
+      "cats": [
+        "overseas"
+      ],
+      "payments": [
+        "card",
+        "applepay"
+      ]
+    },
+    {
+      "card": "jiho",
+      "title": "日本實體消費",
+      "rate": 2.5,
+      "cats": [
+        "overseas-jp"
+      ],
+      "payments": [
+        "card",
+        "applepay"
+      ],
+      "conditions": [
+        {
+          "tag": "待確認",
+          "text": "調查時未能對照官網確認，查證後移除此標籤"
+        }
+      ]
+    },
+    {
+      "card": "jiho",
+      "title": "日本 Apple Pay（QUICPay）",
+      "rate": 4,
+      "cats": [
+        "overseas-jp"
+      ],
+      "payments": [
+        "applepay"
+      ],
+      "conditions": [
+        {
+          "tag": "上限",
+          "text": "加碼每月上限約 NT$1,000"
+        },
+        {
+          "tag": "待確認",
+          "text": "調查時未能對照官網確認，查證後移除此標籤"
+        }
+      ]
+    },
+    {
+      "card": "eco",
+      "title": "一般消費",
+      "rate": 1,
+      "general": true,
+      "payments": [
+        "card",
+        "applepay",
+        "jkopay"
+      ]
+    },
+    {
+      "card": "eco",
+      "title": "指定國家海外實體",
+      "rate": 5,
+      "cats": [
+        "overseas-jp",
+        "overseas-kr",
+        "overseas-th",
+        "overseas-sg",
+        "overseas-us",
+        "overseas-eu"
+      ],
+      "payments": [
+        "card",
+        "applepay"
+      ],
+      "validFrom": "2026-01-01",
+      "validThrough": "2026-12-31",
+      "conditions": [
+        {
+          "tag": "上限",
+          "text": "加碼每期上限 600 點"
+        }
+      ]
+    },
+    {
+      "card": "eco",
+      "title": "eco 指定商家",
+      "rate": 10,
+      "merchants": [
+        "tesla",
+        "gogoro"
+      ],
+      "payments": [
+        "card",
+        "applepay"
+      ],
+      "validFrom": "2026-01-01",
+      "validThrough": "2026-12-31",
+      "conditions": [
+        {
+          "tag": "上限",
+          "text": "加碼每期上限 500 點"
+        }
+      ]
+    }
+  ]
+}
