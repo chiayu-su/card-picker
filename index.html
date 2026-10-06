@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f766e">
+  <title>刷哪張</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="top">
+    <h1>刷哪張</h1>
+    <button id="open-cards" type="button">我的卡</button>
+  </header>
+  <main>
+    <p id="load-error" class="error" hidden></p>
+    <section id="step-payments" class="panel">
+      <h2>1. 這家店收哪些付款方式？</h2>
+      <label class="chip all"><input type="checkbox" id="pay-all" checked> 全選</label>
+      <div id="payments" class="chips"></div>
+    </section>
+    <section id="step-merchant" class="panel">
+      <h2>2. 在哪裡消費？</h2>
+      <input id="search" type="search" placeholder="搜尋店家，例如 全聯、蝦皮" autocomplete="off">
+      <div id="search-results" class="chips"></div>
+      <div id="quick" class="chips"></div>
+      <div id="overseas-picker" class="chips" hidden></div>
+    </section>
+    <section id="results" class="panel">
+      <h2 id="results-title">結果</h2>
+      <div id="result-list"></div>
+    </section>
+  </main>
+  <dialog id="cards-dialog">
+    <form method="dialog">
+      <h2>我的卡</h2>
+      <div id="card-settings"></div>
+      <button type="submit" class="primary">完成</button>
+    </form>
+  </dialog>
+</body>
+</html>
