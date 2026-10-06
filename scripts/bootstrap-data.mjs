@@ -114,8 +114,11 @@ const cards = [
 ];
 
 const rules = [
-  { card: 'cube', title: '基本回饋', rate: 0.3, general: true, payments: CARD },
-  { card: 'cube', title: '基本回饋（行動支付）', rate: 0.3, general: true, payments: ['linepay', 'jkopay', 'pxpay'], conditions: [TBD] },
+  {
+    card: 'cube', title: '基本回饋', rate: 0.3, general: true, payments: CARD,
+    excludeMerchants: ['pxmart'], excludeCats: ['convenience', 'gas', 'insurance'],
+    conditions: [{ tag: '排除', text: '不含全聯、超商、加油、保費、繳稅、儲值、第三方支付' }],
+  },
   { card: 'cube', plan: 'digital', title: '玩數位', rate: 3, merchants: from('cube:玩數位'), payments: CARD, validThrough: CUBE_END },
   { card: 'cube', plan: 'shopping', title: '樂饗購', rate: 3, merchants: from('cube:樂饗購'), payments: CARD, validThrough: CUBE_END },
   {
@@ -128,7 +131,10 @@ const rules = [
   { card: 'cube', plan: 'fpg', title: '台塑家', rate: 2, merchants: from('cube:台塑家'), payments: CARD, validThrough: CUBE_END },
   { card: 'cube', plan: 'pxpay', title: '全支付', rate: 2, general: true, payments: ['pxpay'], validFrom: '2026-06-01', validThrough: CUBE_END, conditions: [TBD] },
 
-  { card: 'richart', title: '基本回饋', rate: 0.3, general: true, payments: ALL },
+  {
+    card: 'richart', title: '基本回饋', rate: 0.3, general: true, payments: ALL, excludeCats: ['convenience'],
+    conditions: [{ tag: '排除', text: '不含四大超商、繳稅費、電子票證儲值' }],
+  },
   { card: 'richart', title: '保費', rate: 1.3, merchants: ['insurance'], payments: ['card'], ...RICHART },
   { card: 'richart', plan: 'daily', title: '天天刷', rate: 3.3, merchants: from('richart:天天刷'), payments: TAISHIN_CARD, ...RICHART },
   { card: 'richart', plan: 'bigspend', title: '大筆刷', rate: 3.3, merchants: from('richart:大筆刷'), payments: TAISHIN_CARD, ...RICHART },

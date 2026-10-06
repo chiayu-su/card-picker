@@ -62,3 +62,37 @@ test('every rule category is used by at least one merchant', () => {
     for (const c of [...(r.cats || []), ...(r.excludeCats || [])]) assert.ok(cats.has(c), `rules[${i}] ${r.card}/${r.title}: cat ${c}`);
   });
 });
+
+import { recommend } from '../engine.js';
+
+const TUE = '2026-10-06';
+const rowsAt = (merchantId, cardId, planState = {}) =>
+  recommend(data, { payments: data.payments.map((p) => p.id), merchantId, ownedCardIds: [cardId], planState, today: TUE });
+const stuckOn = (cardId, plan) => ({ [cardId]: { currentPlan: plan, lastSwitchDate: TUE } });
+
+test('CUBE base reward excludes 全聯, convenience stores, gas and insurance', () => {
+  for (const m of ['pxmart', 'seven', 'familymart', 'hilife', 'cpc', 'insurance']) {
+    assert.deepEqual(rowsAt(m, 'cube', stuckOn('cube', 'digital')), [], m);
+  }
+});
+
+test('CUBE base reward does not apply to third-party wallets', () => {
+  const rows = rowsAt('shopee', 'cube', stuckOn('cube', 'travel'));
+  assert.deepEqual(rows.filter((r) => ['linepay', 'jkopay'].includes(r.paymentId)), []);
+});
+
+test('Richart base reward excludes convenience stores but not 全聯', () => {
+  assert.deepEqual(rowsAt('seven', 'richart', stuckOn('richart', 'digital')), []);
+  assert.ok(rowsAt('pxmart', 'richart', stuckOn('richart', 'digital')).some((r) => r.rate === 0.3));
+});
+
+test('plan rewards still apply at excluded merchant types', () => {
+  assert.ok(rowsAt('seven', 'cube', stuckOn('cube', 'jingxuan')).some((r) => r.rate === 2));
+  assert.ok(rowsAt('seven', 'richart', stuckOn('richart', 'daily')).some((r) => r.rate === 3.3));
+});
+
+test('eco, DAWHO and EVA keep general reward at 全聯 and convenience stores', () => {
+  for (const card of ['eco', 'dawho', 'eva']) {
+    for (const m of ['pxmart', 'seven']) assert.ok(rowsAt(m, card).length > 0, `${card}@${m}`);
+  }
+});

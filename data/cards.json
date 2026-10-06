@@ -2223,22 +2223,19 @@
       "payments": [
         "card",
         "applepay"
-      ]
-    },
-    {
-      "card": "cube",
-      "title": "基本回饋（行動支付）",
-      "rate": 0.3,
-      "general": true,
-      "payments": [
-        "linepay",
-        "jkopay",
-        "pxpay"
+      ],
+      "excludeMerchants": [
+        "pxmart"
+      ],
+      "excludeCats": [
+        "convenience",
+        "gas",
+        "insurance"
       ],
       "conditions": [
         {
-          "tag": "待確認",
-          "text": "調查時未能對照官網確認，查證後移除此標籤"
+          "tag": "排除",
+          "text": "不含全聯、超商、加油、保費、繳稅、儲值、第三方支付"
         }
       ]
     },
@@ -2520,6 +2517,15 @@
         "jkopay",
         "pxpay",
         "taishinpay"
+      ],
+      "excludeCats": [
+        "convenience"
+      ],
+      "conditions": [
+        {
+          "tag": "排除",
+          "text": "不含四大超商、繳稅費、電子票證儲值"
+        }
       ]
     },
     {
