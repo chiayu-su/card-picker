@@ -144,3 +144,14 @@ test('全盈+Pay earns Richart Pay著刷 2.3% and 假日刷', () => {
   assert.ok(planRule('richart', 'pay', 'Pay著刷・LINE Pay / 全盈+Pay').payments.includes('allpayplus'));
   assert.ok(planRule('richart', 'holiday').payments.includes('allpayplus'));
 });
+
+test('Richart Chill刷 plan gives 10% / 5% / 3.3% by merchant group', () => {
+  const richart = data.cards.find((c) => c.id === 'richart');
+  assert.ok(richart.plans.some((p) => p.id === 'chill'));
+  const chill = (id, payment) =>
+    recommend(data, { payments: [payment], merchantId: id, ownedCardIds: ['richart'], planState: stuckOn('richart', 'chill'), today: TUE })[0];
+  assert.equal(chill('zhan_ji_hotpot', 'linepay').rate, 10);
+  assert.equal(chill('netflix', 'card').rate, 5);
+  assert.equal(chill('shopee', 'applepay').rate, 3.3);
+  assert.notEqual((chill('zhan_ji_hotpot', 'allpayplus') || { rate: 0 }).rate, 10);
+});
