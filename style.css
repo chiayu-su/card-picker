@@ -75,3 +75,6 @@ dialog::backdrop { background: rgb(0 0 0 / 40%); }
 .card-setting .note { color: var(--muted); font-size: 13px; margin: 2px 0 0 26px; }
 .plan-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 8px 0 0 26px; }
 .plan-controls select { min-height: 36px; font: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: 8px; }
+.group { border-top: 1px solid var(--line); padding: 6px 0; }
+.group summary { cursor: pointer; min-height: 36px; display: flex; align-items: center; font-weight: 600; }
+.group .chips { margin: 4px 0 8px; }

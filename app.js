@@ -1,4 +1,4 @@
-import { recommend, searchMerchants, localToday } from './engine.js';
+import { recommend, searchMerchants, localToday, groupMerchants } from './engine.js';
 import {
   createStore, browserBackend, sanitize, emptyState, getPerson, withPerson, selectProfile,
   withOwned, withPlan, withSwitchedToday,
@@ -13,13 +13,14 @@ let profiles = [];
 let state = emptyState();
 let selectedPayments = [];
 let selectedMerchant;
+const openGroups = new Set();
 
 function el(tag, attrs = {}, ...children) {
   const node = document.createElement(tag);
   for (const [key, value] of Object.entries(attrs)) {
     if (key === 'class') node.className = value;
     else if (key.startsWith('on')) node.addEventListener(key.slice(2), value);
-    else if (key === 'checked' || key === 'selected' || key === 'hidden') node[key] = Boolean(value);
+    else if (key === 'checked' || key === 'selected' || key === 'hidden' || key === 'open') node[key] = Boolean(value);
     else if (value != null && value !== false) node.setAttribute(key, value);
   }
   node.append(...children.flat().filter((c) => c != null && c !== false));
@@ -112,9 +113,42 @@ function renderQuick() {
         renderQuick();
       },
     }, '海外消費 ▾'),
-    ...data.merchants.filter((m) => m.popular).map(merchantButton)
+    ...data.merchants.filter((m) => m.popular).map(merchantButton),
+    allMerchantsToggle()
   );
   $('#overseas-picker').replaceChildren(...data.merchants.filter((m) => m.id.startsWith('overseas-')).map(merchantButton));
+  renderAllMerchants();
+}
+
+function allMerchantsToggle() {
+  const open = !$('#all-merchants').hidden;
+  const total = groupMerchants(data.merchants, data.categories || []).reduce((n, g) => n + g.merchants.length, 0);
+  return el('button', {
+    type: 'button',
+    class: open ? 'selected' : '',
+    onclick: () => {
+      $('#all-merchants').hidden = !$('#all-merchants').hidden;
+      renderQuick();
+    },
+  }, open ? '－ 收起' : `＋ 全部店家（${total}）`);
+}
+
+function renderAllMerchants() {
+  const box = $('#all-merchants');
+  if (box.hidden) {
+    box.replaceChildren();
+    return;
+  }
+  box.replaceChildren(
+    ...groupMerchants(data.merchants, data.categories || []).map((g) =>
+      el('details', {
+        class: 'group',
+        open: openGroups.has(g.id) || g.merchants.some((m) => m.id === selectedMerchant),
+        ontoggle: (e) => (e.target.open ? openGroups.add(g.id) : openGroups.delete(g.id)),
+      },
+      el('summary', {}, `${g.name}（${g.merchants.length}）`),
+      el('div', { class: 'chips' }, g.merchants.map(merchantButton))))
+  );
 }
 
 function renderSearch() {

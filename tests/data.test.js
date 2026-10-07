@@ -155,3 +155,14 @@ test('Richart Chill刷 plan gives 10% / 5% / 3.3% by merchant group', () => {
   assert.equal(chill('shopee', 'applepay').rate, 3.3);
   assert.notEqual((chill('zhan_ji_hotpot', 'allpayplus') || { rate: 0 }).rate, 10);
 });
+
+test('every browsable merchant belongs to a labelled category', () => {
+  const catIds = data.categories.map((c) => c.id);
+  assert.deepEqual(duplicates(catIds), []);
+  for (const c of data.categories) assert.ok(c.name, c.id);
+  for (const m of data.merchants) {
+    if (m.id.startsWith('overseas-')) continue;
+    const primary = (m.cats || []).find((c) => !c.startsWith('overseas'));
+    assert.ok(catIds.includes(primary), `${m.id}: ${primary}`);
+  }
+});

@@ -123,3 +123,13 @@ export function searchMerchants(merchants, query, limit = 20) {
     .filter((m) => [m.name, ...(m.aliases || [])].some((s) => s.toLowerCase().includes(q)))
     .slice(0, limit);
 }
+
+export function groupMerchants(merchants, categories) {
+  const groups = new Map(categories.map((c) => [c.id, { id: c.id, name: c.name, merchants: [] }]));
+  for (const m of merchants) {
+    if (m.id.startsWith('overseas-')) continue;
+    const primary = (m.cats || []).find((c) => !c.startsWith('overseas'));
+    if (groups.has(primary)) groups.get(primary).merchants.push(m);
+  }
+  return [...groups.values()].filter((g) => g.merchants.length > 0);
+}
