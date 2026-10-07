@@ -36,6 +36,7 @@ body {
   padding: 12px 16px; background: var(--panel); border-bottom: 1px solid var(--line);
 }
 .top h1 { margin: 0; font-size: 20px; }
+.top-actions { display: flex; gap: 8px; }
 main { max-width: 640px; margin: 0 auto; padding: 12px 16px 48px; }
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-bottom: 12px; }
 .panel h2 { margin: 0 0 8px; font-size: 16px; }

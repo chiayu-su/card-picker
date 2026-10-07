@@ -96,3 +96,20 @@ test('eco, DAWHO and EVA keep general reward at 全聯 and convenience stores', 
     for (const m of ['pxmart', 'seven']) assert.ok(rowsAt(m, card).length > 0, `${card}@${m}`);
   }
 });
+
+const { profiles } = JSON.parse(readFileSync(new URL('../data/profiles.json', import.meta.url), 'utf8'));
+
+test('profile names are URL-safe English, unique ignoring case and not guest', () => {
+  const lower = profiles.map((p) => p.name.toLowerCase());
+  for (const p of profiles) assert.match(p.name, /^[A-Za-z0-9-]+$/, p.name);
+  assert.deepEqual(duplicates(lower), []);
+  assert.ok(!lower.includes('guest'));
+});
+
+test('profile cards exist', () => {
+  const cardIds = ids('cards');
+  for (const p of profiles) {
+    assert.ok(Array.isArray(p.cards), p.name);
+    for (const c of p.cards) assert.ok(cardIds.has(c), `${p.name}: ${c}`);
+  }
+});
