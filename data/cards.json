@@ -30,6 +30,144 @@
       "name": "全盈+Pay"
     }
   ],
+  "categories": [
+    {
+      "id": "supermarket",
+      "name": "超市・量販"
+    },
+    {
+      "id": "convenience",
+      "name": "便利商店"
+    },
+    {
+      "id": "dining",
+      "name": "餐飲"
+    },
+    {
+      "id": "food-delivery",
+      "name": "外送"
+    },
+    {
+      "id": "department-store",
+      "name": "百貨・商場"
+    },
+    {
+      "id": "ecommerce",
+      "name": "網購"
+    },
+    {
+      "id": "fashion",
+      "name": "服飾"
+    },
+    {
+      "id": "drugstore",
+      "name": "藥妝"
+    },
+    {
+      "id": "home",
+      "name": "居家"
+    },
+    {
+      "id": "electronics",
+      "name": "3C 家電"
+    },
+    {
+      "id": "gas",
+      "name": "加油"
+    },
+    {
+      "id": "ev-charging",
+      "name": "充電"
+    },
+    {
+      "id": "ev",
+      "name": "電動車"
+    },
+    {
+      "id": "parking",
+      "name": "停車"
+    },
+    {
+      "id": "transport",
+      "name": "交通"
+    },
+    {
+      "id": "car-rental",
+      "name": "租車"
+    },
+    {
+      "id": "airline",
+      "name": "航空"
+    },
+    {
+      "id": "hotel",
+      "name": "飯店"
+    },
+    {
+      "id": "booking-platform",
+      "name": "訂房・訂票平台"
+    },
+    {
+      "id": "travel-agency",
+      "name": "旅行社"
+    },
+    {
+      "id": "travel",
+      "name": "旅遊景點"
+    },
+    {
+      "id": "streaming",
+      "name": "影音串流"
+    },
+    {
+      "id": "digital",
+      "name": "數位內容"
+    },
+    {
+      "id": "ai",
+      "name": "AI 工具"
+    },
+    {
+      "id": "gaming",
+      "name": "遊戲"
+    },
+    {
+      "id": "entertainment",
+      "name": "娛樂・追星"
+    },
+    {
+      "id": "ktv",
+      "name": "KTV"
+    },
+    {
+      "id": "ticketing",
+      "name": "售票"
+    },
+    {
+      "id": "fitness",
+      "name": "健身"
+    },
+    {
+      "id": "health",
+      "name": "保健"
+    },
+    {
+      "id": "education",
+      "name": "教育"
+    },
+    {
+      "id": "retail",
+      "name": "其他零售"
+    },
+    {
+      "id": "insurance",
+      "name": "保費"
+    },
+    {
+      "id": "telecom",
+      "name": "通訊"
+    }
+  ],
   "merchants": [
     {
       "id": "overseas-jp",

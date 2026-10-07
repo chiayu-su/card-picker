@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { weekday, daysBetween, localToday, ruleApplies, recommend, searchMerchants } from '../engine.js';
+import { weekday, daysBetween, localToday, ruleApplies, recommend, searchMerchants, groupMerchants } from '../engine.js';
 
 const pxmart = { id: 'pxmart', name: '全聯', cats: ['supermarket'] };
 const seven = { id: 'seven', name: '7-ELEVEN', cats: ['convenience'] };
@@ -252,4 +252,24 @@ test('searchMerchants returns nothing for empty query and respects limit', () =>
   const many = Array.from({ length: 30 }, (_, i) => ({ id: `m${i}`, name: `店${i}`, cats: [] }));
   assert.equal(searchMerchants(many, '店').length, 20);
   assert.equal(searchMerchants(many, '店', 5).length, 5);
+});
+
+test('groupMerchants groups by first non-overseas category in category order', () => {
+  const categories = [{ id: 'supermarket', name: '超市' }, { id: 'travel', name: '旅遊' }, { id: 'dining', name: '餐飲' }];
+  const merchants = [
+    { id: 'disney', name: '東京迪士尼', cats: ['overseas', 'travel'] },
+    { id: 'pxmart', name: '全聯', cats: ['supermarket'] },
+    { id: 'hotpot', name: '火鍋', cats: ['dining', 'hotpot'] },
+    { id: 'overseas-jp', name: '海外・日本', cats: ['overseas', 'overseas-offline', 'overseas-jp'] },
+    { id: 'cafe', name: '咖啡', cats: ['dining'] },
+  ];
+  assert.deepEqual(
+    groupMerchants(merchants, categories).map((g) => [g.id, g.name, g.merchants.map((m) => m.id)]),
+    [['supermarket', '超市', ['pxmart']], ['travel', '旅遊', ['disney']], ['dining', '餐飲', ['hotpot', 'cafe']]]
+  );
+});
+
+test('groupMerchants skips empty groups and merchants without a known category', () => {
+  const groups = groupMerchants([{ id: 'x', name: 'X', cats: ['unknown'] }], [{ id: 'dining', name: '餐飲' }]);
+  assert.deepEqual(groups, []);
 });
