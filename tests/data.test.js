@@ -5,7 +5,7 @@ import { readFileSync } from 'node:fs';
 const data = JSON.parse(readFileSync(new URL('../data/cards.json', import.meta.url), 'utf8'));
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 const OVERSEAS = ['overseas-jp', 'overseas-kr', 'overseas-th', 'overseas-sg', 'overseas-us', 'overseas-eu', 'overseas-other', 'overseas-online'];
-const PAYMENTS = ['card', 'applepay', 'linepay', 'jkopay', 'pxpay', 'taishinpay'];
+const PAYMENTS = ['card', 'applepay', 'linepay', 'jkopay', 'pxpay', 'taishinpay', 'allpayplus'];
 
 const duplicates = (ids) => ids.filter((id, i) => ids.indexOf(id) !== i);
 const ids = (key) => new Set(data[key].map((x) => x.id));
@@ -16,7 +16,7 @@ test('ids are unique', () => {
   }
 });
 
-test('payments are the six fixed methods in order', () => {
+test('payments are the fixed methods in order', () => {
   assert.deepEqual(data.payments.map((p) => p.id), PAYMENTS);
 });
 
@@ -112,4 +112,46 @@ test('profile cards exist', () => {
     assert.ok(Array.isArray(p.cards), p.name);
     for (const c of p.cards) assert.ok(cardIds.has(c), `${p.name}: ${c}`);
   }
+});
+
+const planRule = (card, plan, title) => data.rules.find((r) => r.card === card && r.plan === plan && (!title || r.title === title));
+
+test('plan merchant lists match the official 2026-10-07 lists', () => {
+  const has = (card, plan, id) => (planRule(card, plan).merchants || []).includes(id);
+  for (const id of ['fe_dept', 'tw_dining']) assert.ok(has('cube', 'shopping', id), id);
+  for (const id of ['tokyo_wb_harry_potter', 'hotel_domestic_mcc']) assert.ok(has('cube', 'travel', id), id);
+  assert.ok(has('richart', 'bigspend', 'net'));
+  for (const id of ['oncor_ktv', 'singgo_ktv']) assert.ok(has('richart', 'dining', id), id);
+  assert.ok(has('richart', 'pay', 'mcdonalds'));
+  assert.ok(!has('richart', 'daily', 'hilife'));
+  assert.ok(!has('richart', 'dining', 'starpoint_ktv'));
+});
+
+test('duplicate merchants are merged', () => {
+  const merchantIds = ids('merchants');
+  for (const id of ['bigcity', 'lifestyle_mall']) assert.ok(!merchantIds.has(id), id);
+});
+
+test('coupon-only promotions are not counted as rewards', () => {
+  assert.ok(!data.rules.some((r) => r.title.includes('週四外食')));
+});
+
+test('CUBE 全支付 plan starts 2026-04-22', () => {
+  assert.equal(planRule('cube', 'pxpay').validFrom, '2026-04-22');
+});
+
+test('全盈+Pay earns Richart Pay著刷 2.3% and 假日刷', () => {
+  assert.ok(planRule('richart', 'pay', 'Pay著刷・LINE Pay / 全盈+Pay').payments.includes('allpayplus'));
+  assert.ok(planRule('richart', 'holiday').payments.includes('allpayplus'));
+});
+
+test('Richart Chill刷 plan gives 10% / 5% / 3.3% by merchant group', () => {
+  const richart = data.cards.find((c) => c.id === 'richart');
+  assert.ok(richart.plans.some((p) => p.id === 'chill'));
+  const chill = (id, payment) =>
+    recommend(data, { payments: [payment], merchantId: id, ownedCardIds: ['richart'], planState: stuckOn('richart', 'chill'), today: TUE })[0];
+  assert.equal(chill('zhan_ji_hotpot', 'linepay').rate, 10);
+  assert.equal(chill('netflix', 'card').rate, 5);
+  assert.equal(chill('shopee', 'applepay').rate, 3.3);
+  assert.notEqual((chill('zhan_ji_hotpot', 'allpayplus') || { rate: 0 }).rate, 10);
 });

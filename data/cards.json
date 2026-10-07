@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "payments": [
     {
       "id": "card",
@@ -24,6 +24,10 @@
     {
       "id": "taishinpay",
       "name": "台新Pay"
+    },
+    {
+      "id": "allpayplus",
+      "name": "全盈+Pay"
     }
   ],
   "merchants": [
@@ -492,15 +496,9 @@
     {
       "id": "noke",
       "name": "NOKE忠泰",
-      "aliases": [],
-      "cats": [
-        "department-store"
-      ]
-    },
-    {
-      "id": "lifestyle_mall",
-      "name": "樂生活",
-      "aliases": [],
+      "aliases": [
+        "樂生活"
+      ],
       "cats": [
         "department-store"
       ]
@@ -553,20 +551,11 @@
       ]
     },
     {
-      "id": "bigcity",
-      "name": "Big City",
-      "aliases": [
-        "遠東Big City"
-      ],
-      "cats": [
-        "department-store"
-      ]
-    },
-    {
       "id": "fe_bigcity_hsinchu",
       "name": "遠東巨城",
       "aliases": [
-        "巨城"
+        "巨城",
+        "Big City"
       ],
       "cats": [
         "department-store"
@@ -2108,6 +2097,696 @@
         "travel-agency",
         "travel"
       ]
+    },
+    {
+      "id": "tokyo_wb_harry_potter",
+      "name": "東京華納兄弟哈利波特影城",
+      "aliases": [
+        "華納哈利波特影城",
+        "哈利波特影城"
+      ],
+      "cats": [
+        "travel",
+        "theme-park",
+        "overseas",
+        "overseas-offline",
+        "overseas-jp"
+      ]
+    },
+    {
+      "id": "hotel_domestic_mcc",
+      "name": "國內飯店住宿",
+      "aliases": [
+        "國內飯店",
+        "飯店住宿",
+        "飯店"
+      ],
+      "cats": [
+        "hotel",
+        "travel"
+      ]
+    },
+    {
+      "id": "oncor_ktv",
+      "name": "ONCOR",
+      "aliases": [
+        "ONCOR KTV"
+      ],
+      "cats": [
+        "ktv",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "singgo_ktv",
+      "name": "sing!go",
+      "aliases": [
+        "singgo",
+        "sing go"
+      ],
+      "cats": [
+        "ktv",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "zhan_ji_hotpot",
+      "name": "詹記麻辣火鍋",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "hotpot"
+      ]
+    },
+    {
+      "id": "wanke_hotpot",
+      "name": "萬客什鍋",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "hotpot"
+      ]
+    },
+    {
+      "id": "haidilao",
+      "name": "海底撈",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "hotpot"
+      ]
+    },
+    {
+      "id": "umai_yakiniku",
+      "name": "屋馬燒肉",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bbq"
+      ]
+    },
+    {
+      "id": "chaliu_yakiniku",
+      "name": "茶六燒肉堂",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bbq"
+      ]
+    },
+    {
+      "id": "xincun_standing",
+      "name": "新村站著吃",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bbq"
+      ]
+    },
+    {
+      "id": "masamune_yakiniku",
+      "name": "燒肉政宗",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bbq"
+      ]
+    },
+    {
+      "id": "tanzamari",
+      "name": "碳佐麻里",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bbq"
+      ]
+    },
+    {
+      "id": "chicken_soup_uncle",
+      "name": "雞湯大叔",
+      "aliases": [],
+      "cats": [
+        "dining"
+      ]
+    },
+    {
+      "id": "gonna",
+      "name": "gonna共樂遊",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bar"
+      ]
+    },
+    {
+      "id": "brun",
+      "name": "BRUN 不然",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bar"
+      ]
+    },
+    {
+      "id": "cafe_acme",
+      "name": "CAFE ACME",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "cafe"
+      ]
+    },
+    {
+      "id": "the_antipodean",
+      "name": "The Antipodean",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "cafe"
+      ]
+    },
+    {
+      "id": "second_floor",
+      "name": "貳樓",
+      "aliases": [],
+      "cats": [
+        "dining"
+      ]
+    },
+    {
+      "id": "lezi_diner",
+      "name": "樂子 the Diner",
+      "aliases": [],
+      "cats": [
+        "dining"
+      ]
+    },
+    {
+      "id": "fake_sober",
+      "name": "Fake Sober",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bar"
+      ]
+    },
+    {
+      "id": "draft_land",
+      "name": "Draft Land",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bar"
+      ]
+    },
+    {
+      "id": "taihu_brewing",
+      "name": "臺虎精釀(含啜飲室)",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bar"
+      ]
+    },
+    {
+      "id": "abv_bar",
+      "name": "ABV系列",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bar"
+      ]
+    },
+    {
+      "id": "bar_tcrc",
+      "name": "Bar TCRC",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bar"
+      ]
+    },
+    {
+      "id": "bar_home",
+      "name": "Bar Home",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bar"
+      ]
+    },
+    {
+      "id": "phowa",
+      "name": "Phowa",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bar"
+      ]
+    },
+    {
+      "id": "moonrock",
+      "name": "MOONROCK",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "bar"
+      ]
+    },
+    {
+      "id": "taiwan_daijia",
+      "name": "台灣代駕",
+      "aliases": [],
+      "cats": [
+        "transport"
+      ]
+    },
+    {
+      "id": "motodomo",
+      "name": "Motodomo 愛車管家",
+      "aliases": [],
+      "cats": [
+        "transport"
+      ]
+    },
+    {
+      "id": "fifty_lan",
+      "name": "50嵐",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "drinks"
+      ]
+    },
+    {
+      "id": "dezheng",
+      "name": "得正",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "drinks"
+      ]
+    },
+    {
+      "id": "wutong",
+      "name": "五桐號",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "drinks"
+      ]
+    },
+    {
+      "id": "guiji",
+      "name": "龜記",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "drinks"
+      ]
+    },
+    {
+      "id": "ug_tea",
+      "name": "UG TEA",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "drinks"
+      ]
+    },
+    {
+      "id": "dingge",
+      "name": "叮哥茶飲",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "drinks"
+      ]
+    },
+    {
+      "id": "cafe_n",
+      "name": "CAFE!N",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "cafe"
+      ]
+    },
+    {
+      "id": "arabica",
+      "name": "%Arabica",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "cafe"
+      ]
+    },
+    {
+      "id": "compose_coffee",
+      "name": "COMPOSE COFFEE",
+      "aliases": [],
+      "cats": [
+        "dining",
+        "cafe"
+      ]
+    },
+    {
+      "id": "inparadise",
+      "name": "饗饗 INPARADISE",
+      "aliases": [],
+      "cats": [
+        "dining"
+      ]
+    },
+    {
+      "id": "nagomi",
+      "name": "NAGOMI",
+      "aliases": [],
+      "cats": [
+        "dining"
+      ]
+    },
+    {
+      "id": "weverse",
+      "name": "WEVERSE",
+      "aliases": [],
+      "cats": [
+        "entertainment"
+      ]
+    },
+    {
+      "id": "k_monstar",
+      "name": "K-MONSTAR",
+      "aliases": [],
+      "cats": [
+        "entertainment"
+      ]
+    },
+    {
+      "id": "weilek",
+      "name": "微樂客",
+      "aliases": [],
+      "cats": [
+        "entertainment"
+      ]
+    },
+    {
+      "id": "five_music",
+      "name": "五大唱片",
+      "aliases": [],
+      "cats": [
+        "entertainment"
+      ]
+    },
+    {
+      "id": "fairy_tree",
+      "name": "仙女樹",
+      "aliases": [],
+      "cats": [
+        "entertainment"
+      ]
+    },
+    {
+      "id": "fanme",
+      "name": "FANME",
+      "aliases": [],
+      "cats": [
+        "entertainment"
+      ]
+    },
+    {
+      "id": "nol",
+      "name": "NOL",
+      "aliases": [],
+      "cats": [
+        "entertainment"
+      ]
+    },
+    {
+      "id": "bahamut",
+      "name": "巴哈姆特",
+      "aliases": [],
+      "cats": [
+        "digital",
+        "gaming"
+      ]
+    },
+    {
+      "id": "book_walker",
+      "name": "BOOK WALKER",
+      "aliases": [],
+      "cats": [
+        "digital"
+      ]
+    },
+    {
+      "id": "animate",
+      "name": "Animate",
+      "aliases": [],
+      "cats": [
+        "retail"
+      ]
+    },
+    {
+      "id": "rakuten_kobo",
+      "name": "樂天KOBO",
+      "aliases": [],
+      "cats": [
+        "digital"
+      ]
+    },
+    {
+      "id": "readmoo",
+      "name": "Readmoo讀墨",
+      "aliases": [],
+      "cats": [
+        "digital"
+      ]
+    },
+    {
+      "id": "elta",
+      "name": "愛爾達",
+      "aliases": [],
+      "cats": [
+        "streaming"
+      ]
+    },
+    {
+      "id": "pinkoi",
+      "name": "Pinkoi",
+      "aliases": [],
+      "cats": [
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "apple_store",
+      "name": "Apple 直營(含官網)",
+      "aliases": [],
+      "cats": [
+        "electronics"
+      ]
+    },
+    {
+      "id": "studio_a",
+      "name": "Studio A(含Straight A)",
+      "aliases": [],
+      "cats": [
+        "electronics"
+      ]
+    },
+    {
+      "id": "dji",
+      "name": "DJI",
+      "aliases": [],
+      "cats": [
+        "electronics"
+      ]
+    },
+    {
+      "id": "insta360",
+      "name": "Insta360",
+      "aliases": [],
+      "cats": [
+        "electronics"
+      ]
+    },
+    {
+      "id": "gopro",
+      "name": "GoPro",
+      "aliases": [],
+      "cats": [
+        "electronics"
+      ]
+    },
+    {
+      "id": "haohao_bio",
+      "name": "好好生醫",
+      "aliases": [],
+      "cats": [
+        "health"
+      ]
+    },
+    {
+      "id": "popcare",
+      "name": "POPCARE好在乎",
+      "aliases": [],
+      "cats": [
+        "health"
+      ]
+    },
+    {
+      "id": "dietitian_meal",
+      "name": "營養師輕食",
+      "aliases": [],
+      "cats": [
+        "health",
+        "dining"
+      ]
+    },
+    {
+      "id": "vitabox",
+      "name": "VITABOX",
+      "aliases": [],
+      "cats": [
+        "health"
+      ]
+    },
+    {
+      "id": "myprotein",
+      "name": "MYPROTEIN",
+      "aliases": [],
+      "cats": [
+        "health"
+      ]
+    },
+    {
+      "id": "urmart",
+      "name": "UrMart優馬選品",
+      "aliases": [],
+      "cats": [
+        "health",
+        "ecommerce"
+      ]
+    },
+    {
+      "id": "anytime_fitness",
+      "name": "Anytime Fitness",
+      "aliases": [],
+      "cats": [
+        "fitness"
+      ]
+    },
+    {
+      "id": "fitness_factory",
+      "name": "健身工廠",
+      "aliases": [],
+      "cats": [
+        "fitness"
+      ]
+    },
+    {
+      "id": "world_gym",
+      "name": "World Gym",
+      "aliases": [],
+      "cats": [
+        "fitness"
+      ]
+    },
+    {
+      "id": "hypercore",
+      "name": "超核心 Hypercore",
+      "aliases": [],
+      "cats": [
+        "fitness"
+      ]
+    },
+    {
+      "id": "kx_pilates",
+      "name": "KX PILATES",
+      "aliases": [],
+      "cats": [
+        "fitness"
+      ]
+    },
+    {
+      "id": "tiger_iron_pilates",
+      "name": "虎鐵健身 X 器械皮拉提斯",
+      "aliases": [],
+      "cats": [
+        "fitness"
+      ]
+    },
+    {
+      "id": "fit17",
+      "name": "17FIT",
+      "aliases": [],
+      "cats": [
+        "fitness"
+      ]
+    },
+    {
+      "id": "adidas",
+      "name": "Adidas",
+      "aliases": [],
+      "cats": [
+        "fashion",
+        "sports"
+      ]
+    },
+    {
+      "id": "new_balance",
+      "name": "New Balance",
+      "aliases": [],
+      "cats": [
+        "fashion",
+        "sports"
+      ]
+    },
+    {
+      "id": "puma",
+      "name": "PUMA",
+      "aliases": [],
+      "cats": [
+        "fashion",
+        "sports"
+      ]
+    },
+    {
+      "id": "onitsuka_tiger",
+      "name": "Onitsuka Tiger",
+      "aliases": [],
+      "cats": [
+        "fashion",
+        "sports"
+      ]
+    },
+    {
+      "id": "nike",
+      "name": "Nike",
+      "aliases": [],
+      "cats": [
+        "fashion",
+        "sports"
+      ]
+    },
+    {
+      "id": "hoka",
+      "name": "HOKA",
+      "aliases": [],
+      "cats": [
+        "fashion",
+        "sports"
+      ]
+    },
+    {
+      "id": "salomon",
+      "name": "Salomon",
+      "aliases": [],
+      "cats": [
+        "fashion",
+        "sports"
+      ]
     }
   ],
   "cards": [
@@ -2115,7 +2794,7 @@
       "id": "cube",
       "bank": "國泰世華",
       "name": "CUBE 卡",
-      "lastVerified": "2026-10-06",
+      "lastVerified": "2026-10-07",
       "officialUrl": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube",
       "note": "以 Level 2（設定自動扣繳）計算",
       "plans": [
@@ -2149,7 +2828,7 @@
       "id": "richart",
       "bank": "台新",
       "name": "Richart 卡",
-      "lastVerified": "2026-10-06",
+      "lastVerified": "2026-10-07",
       "officialUrl": "https://richart.tw/TSDIB_RichartWeb/card/credit-card",
       "note": "以 Level 2（設定台新帳戶自動扣繳）計算",
       "plans": [
@@ -2180,6 +2859,10 @@
         {
           "id": "holiday",
           "name": "假日刷"
+        },
+        {
+          "id": "chill",
+          "name": "Chill刷"
         }
       ]
     },
@@ -2293,13 +2976,11 @@
         "q_square",
         "miramar",
         "noke",
-        "lifestyle_mall",
         "takashimaya",
         "lalaport",
         "hhh_plaza",
         "taimall",
         "dajiang",
-        "bigcity",
         "fe_bigcity_hsinchu",
         "zhongyou",
         "guangsan_sogo",
@@ -2320,43 +3001,15 @@
         "foodpanda",
         "mcdonalds",
         "cosmed",
-        "watsons"
+        "watsons",
+        "fe_dept",
+        "tw_dining"
       ],
       "payments": [
         "card",
         "applepay"
       ],
       "validThrough": "2026-12-31"
-    },
-    {
-      "card": "cube",
-      "plan": "shopping",
-      "title": "樂饗購・週四外食",
-      "rate": 8,
-      "cats": [
-        "dining"
-      ],
-      "days": [
-        4
-      ],
-      "payments": [
-        "card",
-        "applepay"
-      ],
-      "validThrough": "2026-12-31",
-      "conditions": [
-        {
-          "tag": "滿額",
-          "text": "週四外食滿 NT$2,000"
-        },
-        {
-          "tag": "需登錄"
-        },
-        {
-          "tag": "待確認",
-          "text": "調查時未能對照官網確認，查證後移除此標籤"
-        }
-      ]
     },
     {
       "card": "cube",
@@ -2415,7 +3068,9 @@
         "ezfly",
         "ideal_travel",
         "yongli_travel",
-        "sanhe_travel"
+        "sanhe_travel",
+        "tokyo_wb_harry_potter",
+        "hotel_domestic_mcc"
       ],
       "payments": [
         "card",
@@ -2496,7 +3151,7 @@
       "payments": [
         "pxpay"
       ],
-      "validFrom": "2026-06-01",
+      "validFrom": "2026-04-22",
       "validThrough": "2026-12-31",
       "conditions": [
         {
@@ -2516,7 +3171,8 @@
         "linepay",
         "jkopay",
         "pxpay",
-        "taishinpay"
+        "taishinpay",
+        "allpayplus"
       ],
       "excludeCats": [
         "convenience"
@@ -2560,7 +3216,6 @@
         "cpc",
         "seven",
         "familymart",
-        "hilife",
         "dashu_pharmacy",
         "donki",
         "daimaijia",
@@ -2620,7 +3275,8 @@
         "uniqlo",
         "gu",
         "zara",
-        "lululemon"
+        "lululemon",
+        "net"
       ],
       "payments": [
         "card",
@@ -2640,7 +3296,6 @@
         "foodpanda",
         "cashbox",
         "holiday_ktv",
-        "starpoint_ktv",
         "warm_ktv",
         "funnow",
         "tw_dining",
@@ -2649,7 +3304,9 @@
         "ticket_era",
         "kham",
         "opentix",
-        "hotels_tw"
+        "hotels_tw",
+        "oncor_ktv",
+        "singgo_ktv"
       ],
       "cats": [
         "dining"
@@ -2807,7 +3464,8 @@
         "lawson_jp",
         "biccamera",
         "gs25_kr",
-        "daiso"
+        "daiso",
+        "mcdonalds"
       ],
       "payments": [
         "taishinpay"
@@ -2818,7 +3476,7 @@
     {
       "card": "richart",
       "plan": "pay",
-      "title": "Pay著刷・LINE Pay",
+      "title": "Pay著刷・LINE Pay / 全盈+Pay",
       "rate": 2.3,
       "merchants": [
         "skm",
@@ -2836,10 +3494,12 @@
         "lawson_jp",
         "biccamera",
         "gs25_kr",
-        "daiso"
+        "daiso",
+        "mcdonalds"
       ],
       "payments": [
-        "linepay"
+        "linepay",
+        "allpayplus"
       ],
       "validFrom": "2026-07-01",
       "validThrough": "2027-03-31"
@@ -2866,7 +3526,8 @@
         "card",
         "applepay",
         "linepay",
-        "taishinpay"
+        "taishinpay",
+        "allpayplus"
       ],
       "validFrom": "2026-07-01",
       "validThrough": "2027-03-31",
@@ -2878,6 +3539,154 @@
         {
           "tag": "國定假日",
           "text": "國定假日也適用，本工具只判斷週末"
+        }
+      ]
+    },
+    {
+      "card": "richart",
+      "plan": "chill",
+      "title": "Chill刷・歡聚微醺／日常續命",
+      "rate": 10,
+      "merchants": [
+        "zhan_ji_hotpot",
+        "wanke_hotpot",
+        "haidilao",
+        "umai_yakiniku",
+        "chaliu_yakiniku",
+        "xincun_standing",
+        "masamune_yakiniku",
+        "tanzamari",
+        "chicken_soup_uncle",
+        "gonna",
+        "brun",
+        "cafe_acme",
+        "the_antipodean",
+        "second_floor",
+        "lezi_diner",
+        "fake_sober",
+        "draft_land",
+        "taihu_brewing",
+        "abv_bar",
+        "bar_tcrc",
+        "bar_home",
+        "phowa",
+        "moonrock",
+        "taiwan_daijia",
+        "motodomo",
+        "fifty_lan",
+        "dezheng",
+        "wutong",
+        "guiji",
+        "ug_tea",
+        "dingge",
+        "cafe_n",
+        "arabica",
+        "compose_coffee"
+      ],
+      "payments": [
+        "card",
+        "applepay",
+        "taishinpay",
+        "linepay"
+      ],
+      "validFrom": "2026-07-08",
+      "validThrough": "2026-12-31",
+      "conditions": [
+        {
+          "tag": "限獨立店或官網",
+          "text": "百貨、外送平台、網購平台、商場、飯店內消費不加碼；需門市提供信用卡或 LINE Pay 付款"
+        }
+      ]
+    },
+    {
+      "card": "richart",
+      "plan": "chill",
+      "title": "Chill刷・指定品牌",
+      "rate": 5,
+      "merchants": [
+        "inparadise",
+        "nagomi",
+        "weverse",
+        "k_monstar",
+        "weilek",
+        "five_music",
+        "fairy_tree",
+        "fanme",
+        "nol",
+        "bahamut",
+        "book_walker",
+        "animate",
+        "rakuten_kobo",
+        "readmoo",
+        "netflix",
+        "disney_plus",
+        "elta",
+        "pinkoi",
+        "haohao_bio",
+        "popcare",
+        "dietitian_meal",
+        "vitabox",
+        "myprotein",
+        "urmart",
+        "anytime_fitness",
+        "fitness_factory",
+        "world_gym",
+        "hypercore",
+        "kx_pilates",
+        "tiger_iron_pilates",
+        "fit17",
+        "adidas",
+        "new_balance",
+        "puma",
+        "onitsuka_tiger",
+        "nike",
+        "hoka",
+        "salomon",
+        "lululemon"
+      ],
+      "payments": [
+        "card",
+        "applepay",
+        "taishinpay",
+        "linepay"
+      ],
+      "validFrom": "2026-07-08",
+      "validThrough": "2026-12-31",
+      "conditions": [
+        {
+          "tag": "限獨立店或官網",
+          "text": "百貨、外送平台、網購平台、商場、飯店內消費不加碼；需門市提供信用卡或 LINE Pay 付款"
+        }
+      ]
+    },
+    {
+      "card": "richart",
+      "plan": "chill",
+      "title": "Chill刷・數位外掛／指定平台",
+      "rate": 3.3,
+      "merchants": [
+        "apple_store",
+        "studio_a",
+        "dji",
+        "insta360",
+        "gopro",
+        "shopee",
+        "taobao",
+        "coupang",
+        "ubereats"
+      ],
+      "payments": [
+        "card",
+        "applepay",
+        "taishinpay",
+        "linepay"
+      ],
+      "validFrom": "2026-07-08",
+      "validThrough": "2026-12-31",
+      "conditions": [
+        {
+          "tag": "限獨立店或官網",
+          "text": "百貨、外送平台、網購平台、商場、飯店內消費不加碼；需門市提供信用卡或 LINE Pay 付款"
         }
       ]
     },
