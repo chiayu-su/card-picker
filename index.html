@@ -11,7 +11,10 @@
 <body>
   <header class="top">
     <h1>刷哪張</h1>
-    <button id="open-cards" type="button">我的卡</button>
+    <div class="top-actions">
+      <button id="open-profile" type="button">👤</button>
+      <button id="open-cards" type="button">我的卡</button>
+    </div>
   </header>
   <main>
     <p id="load-error" class="error" hidden></p>
@@ -32,6 +35,13 @@
       <div id="result-list"></div>
     </section>
   </main>
+  <dialog id="profile-dialog">
+    <form method="dialog">
+      <h2>你是誰？</h2>
+      <p class="hint">選一次就會記住。也可以用帶名字的網址，例如 ?p=hannah。</p>
+      <div id="profile-list" class="chips"></div>
+    </form>
+  </dialog>
   <dialog id="cards-dialog">
     <form method="dialog">
       <h2>我的卡</h2>

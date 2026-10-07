@@ -1,11 +1,16 @@
 import { recommend, searchMerchants, localToday } from './engine.js';
-import { createStore, browserBackend, sanitize, withOwned, withPlan, withSwitchedToday } from './storage.js';
+import {
+  createStore, browserBackend, sanitize, emptyState, getPerson, withPerson, selectProfile,
+  withOwned, withPlan, withSwitchedToday,
+} from './storage.js';
+import { GUEST, resolveProfile, ownedFor } from './profile.js';
 
 const $ = (selector) => document.querySelector(selector);
 const store = createStore(browserBackend());
 
 let data = null;
-let state = { owned: [], planState: {} };
+let profiles = [];
+let state = emptyState();
 let selectedPayments = [];
 let selectedMerchant;
 
@@ -25,11 +30,43 @@ const today = () => localToday();
 const byId = (list, id) => list.find((x) => x.id === id);
 const planName = (card, planId) => (byId(card.plans || [], planId) || {}).name || planId;
 
+const names = () => [...profiles.map((p) => p.name), GUEST];
+const personName = () => state.profile || GUEST;
+const person = () => getPerson(state, personName());
+const baseOwned = () => ownedFor(profiles, state.profile, data.cards);
+const owned = () => person().owned || baseOwned();
+const profileLabel = () => (state.profile && state.profile !== GUEST ? state.profile : '訪客');
+
 function save(next) {
-  state = sanitize(next, data);
+  state = sanitize(next, data, names());
   store.write(state);
+  renderProfile();
   renderCardSettings();
   renderResults();
+}
+
+function savePerson(next) {
+  save(withPerson(state, personName(), next));
+}
+
+function renderProfile() {
+  $('#open-profile').textContent = `👤 ${profileLabel()}`;
+  $('#profile-list').replaceChildren(
+    ...names().map((name) =>
+      el('button', {
+        type: 'button',
+        class: name === state.profile ? 'selected' : '',
+        onclick: () => {
+          save(selectProfile(state, name));
+          $('#profile-dialog').close();
+        },
+      }, name === GUEST ? '訪客（全部卡片）' : name))
+  );
+}
+
+function openProfile() {
+  renderProfile();
+  $('#profile-dialog').showModal();
 }
 
 function renderPayments() {
@@ -123,7 +160,7 @@ function renderRow(row, index, now) {
     row.status === 'switch'
       ? el('div', { class: 'switch' },
           `🔄 切到「${planName(card, row.planId)}」`,
-          el('button', { type: 'button', onclick: () => save(withPlan(state, card.id, row.planId, true, now)) }, '我切了'))
+          el('button', { type: 'button', onclick: () => savePerson(withPlan(person(), card.id, row.planId, true, today())) }, '我切了'))
       : null,
     row.tomorrow ? el('div', { class: 'tomorrow' }, `⏳ 明天切到「${planName(card, row.tomorrow.planId)}」可得 ${row.tomorrow.rate}%`) : null,
     el('div', { class: 'tags' }, tags)
@@ -135,7 +172,7 @@ function renderResults() {
   const title = $('#results-title');
   const merchant = typeof selectedMerchant === 'string' ? byId(data.merchants, selectedMerchant) : null;
   title.textContent = selectedMerchant === undefined ? '結果' : `結果：${selectedMerchant === null ? '一般消費' : (merchant || {}).name || ''}`;
-  if (state.owned.length === 0) {
+  if (owned().length === 0) {
     list.replaceChildren(hint('還沒選你有哪些卡。', el('button', { type: 'button', onclick: openCards }, '設定我的卡')));
     return;
   }
@@ -151,8 +188,8 @@ function renderResults() {
   const rows = recommend(data, {
     payments: selectedPayments,
     merchantId: selectedMerchant,
-    ownedCardIds: state.owned,
-    planState: state.planState,
+    ownedCardIds: owned(),
+    planState: person().planState,
     today: now,
   });
   list.replaceChildren(
@@ -162,22 +199,28 @@ function renderResults() {
 
 function renderCardSettings() {
   const now = today();
+  const current = person();
+  const ownedIds = owned();
   $('#card-settings').replaceChildren(
+    current.owned
+      ? el('p', { class: 'note' }, '這支手機的勾選跟名單不同。',
+          el('button', { type: 'button', onclick: () => savePerson({ ...current, owned: null }) }, '恢復名單預設'))
+      : null,
     ...data.cards.map((card) => {
-      const owned = state.owned.includes(card.id);
-      const ps = state.planState[card.id] || { currentPlan: null, lastSwitchDate: null };
+      const isOwned = ownedIds.includes(card.id);
+      const ps = current.planState[card.id] || { currentPlan: null, lastSwitchDate: null };
       return el('div', { class: 'card-setting' },
         el('label', {},
-          el('input', { type: 'checkbox', checked: owned, onchange: (e) => save(withOwned(state, card.id, e.target.checked)) }),
+          el('input', { type: 'checkbox', checked: isOwned, onchange: (e) => savePerson(withOwned(person(), card.id, e.target.checked, baseOwned())) }),
           ` ${card.bank} ${card.name}`),
         card.note ? el('p', { class: 'note' }, card.note) : null,
-        owned && card.plans
+        isOwned && card.plans
           ? el('div', { class: 'plan-controls' },
               el('label', {}, '目前方案 ',
                 el('select', {
                   onchange: (e) => {
                     const planId = e.target.value || null;
-                    save(withPlan(state, card.id, planId, planId !== null, now));
+                    savePerson(withPlan(person(), card.id, planId, planId !== null, today()));
                   },
                 },
                 el('option', { value: '', selected: !ps.currentPlan }, '（未設定）'),
@@ -186,7 +229,7 @@ function renderCardSettings() {
                 el('input', {
                   type: 'checkbox',
                   checked: ps.lastSwitchDate === now,
-                  onchange: (e) => save(withSwitchedToday(state, card.id, e.target.checked, now)),
+                  onchange: (e) => savePerson(withSwitchedToday(person(), card.id, e.target.checked, today())),
                 }),
                 ' 今天已切過'))
           : null
@@ -205,6 +248,18 @@ function showError(message) {
   $('#load-error').hidden = false;
   for (const id of ['#step-payments', '#step-merchant', '#results']) $(id).hidden = true;
   $('#open-cards').disabled = true;
+  $('#open-profile').disabled = true;
+}
+
+async function loadProfiles() {
+  try {
+    const res = await fetch('data/profiles.json', { cache: 'no-cache' });
+    if (!res.ok) return [];
+    const json = await res.json();
+    return Array.isArray(json.profiles) ? json.profiles.filter((p) => p && typeof p.name === 'string' && Array.isArray(p.cards)) : [];
+  } catch {
+    return [];
+  }
 }
 
 async function start() {
@@ -216,7 +271,13 @@ async function start() {
     showError(`卡片資料載入失敗（${err.message}），請重新整理頁面。`);
     return;
   }
-  state = sanitize(store.read(), data);
+  profiles = await loadProfiles();
+  state = sanitize(store.read(), data, names());
+  const resolved = resolveProfile(profiles, new URLSearchParams(location.search).get('p'), state.profile);
+  if (resolved.source === 'url' && resolved.name !== state.profile) {
+    state = sanitize(selectProfile(state, resolved.name), data, names());
+    store.write(state);
+  }
   selectedPayments = data.payments.map((p) => p.id);
   $('#pay-all').addEventListener('change', (e) => {
     selectedPayments = e.target.checked ? data.payments.map((p) => p.id) : [];
@@ -225,6 +286,7 @@ async function start() {
   });
   $('#search').addEventListener('input', renderSearch);
   $('#open-cards').addEventListener('click', openCards);
+  $('#open-profile').addEventListener('click', openProfile);
   $('#cards-dialog').addEventListener('close', renderResults);
   document.addEventListener('visibilitychange', () => {
     if (!document.hidden) {
@@ -234,7 +296,9 @@ async function start() {
   });
   renderPayments();
   renderQuick();
+  renderProfile();
   renderResults();
+  if (resolved.source === 'ask') openProfile();
 }
 
 start();

@@ -27,6 +27,19 @@ node --test tests/
 
 `scripts/bootstrap-data.mjs` 只用來產生第一版資料，之後不要再執行（會覆蓋手動修改）。
 
+## 家人朋友名單
+
+名單在 `data/profiles.json`，每個人一筆：
+
+```json
+{ "name": "mom", "cards": ["cube", "eva"] }
+```
+
+- `name` 只能用英文字母、數字和 `-`，同時是顯示名稱和網址代號。
+- `cards` 填 `data/cards.json` 裡的卡片 id；留空陣列代表全部卡片。
+- 給每個人專屬網址 `https://chiayu-su.github.io/card-picker/?p=<name>`，用這個網址加到主畫面就不用選人。
+- 沒帶名字的網址第一次會跳出「你是誰？」，選一次就記住；「訪客」會比較全部卡片。
+
 ## 部署到 GitHub Pages
 
 1. 在 GitHub 建立 repo，`git remote add origin <url>`，`git push -u origin main`。
