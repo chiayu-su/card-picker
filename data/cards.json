@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "payments": [
     {
       "id": "card",
@@ -24,6 +24,10 @@
     {
       "id": "taishinpay",
       "name": "台新Pay"
+    },
+    {
+      "id": "allpayplus",
+      "name": "全盈+Pay"
     }
   ],
   "merchants": [
@@ -492,15 +496,9 @@
     {
       "id": "noke",
       "name": "NOKE忠泰",
-      "aliases": [],
-      "cats": [
-        "department-store"
-      ]
-    },
-    {
-      "id": "lifestyle_mall",
-      "name": "樂生活",
-      "aliases": [],
+      "aliases": [
+        "樂生活"
+      ],
       "cats": [
         "department-store"
       ]
@@ -553,20 +551,11 @@
       ]
     },
     {
-      "id": "bigcity",
-      "name": "Big City",
-      "aliases": [
-        "遠東Big City"
-      ],
-      "cats": [
-        "department-store"
-      ]
-    },
-    {
       "id": "fe_bigcity_hsinchu",
       "name": "遠東巨城",
       "aliases": [
-        "巨城"
+        "巨城",
+        "Big City"
       ],
       "cats": [
         "department-store"
@@ -2108,6 +2097,57 @@
         "travel-agency",
         "travel"
       ]
+    },
+    {
+      "id": "tokyo_wb_harry_potter",
+      "name": "東京華納兄弟哈利波特影城",
+      "aliases": [
+        "華納哈利波特影城",
+        "哈利波特影城"
+      ],
+      "cats": [
+        "travel",
+        "theme-park",
+        "overseas",
+        "overseas-offline",
+        "overseas-jp"
+      ]
+    },
+    {
+      "id": "hotel_domestic_mcc",
+      "name": "國內飯店住宿",
+      "aliases": [
+        "國內飯店",
+        "飯店住宿",
+        "飯店"
+      ],
+      "cats": [
+        "hotel",
+        "travel"
+      ]
+    },
+    {
+      "id": "oncor_ktv",
+      "name": "ONCOR",
+      "aliases": [
+        "ONCOR KTV"
+      ],
+      "cats": [
+        "ktv",
+        "entertainment"
+      ]
+    },
+    {
+      "id": "singgo_ktv",
+      "name": "sing!go",
+      "aliases": [
+        "singgo",
+        "sing go"
+      ],
+      "cats": [
+        "ktv",
+        "entertainment"
+      ]
     }
   ],
   "cards": [
@@ -2115,7 +2155,7 @@
       "id": "cube",
       "bank": "國泰世華",
       "name": "CUBE 卡",
-      "lastVerified": "2026-10-06",
+      "lastVerified": "2026-10-07",
       "officialUrl": "https://www.cathay-cube.com.tw/cathaybk/personal/product/credit-card/cards/cube",
       "note": "以 Level 2（設定自動扣繳）計算",
       "plans": [
@@ -2149,7 +2189,7 @@
       "id": "richart",
       "bank": "台新",
       "name": "Richart 卡",
-      "lastVerified": "2026-10-06",
+      "lastVerified": "2026-10-07",
       "officialUrl": "https://richart.tw/TSDIB_RichartWeb/card/credit-card",
       "note": "以 Level 2（設定台新帳戶自動扣繳）計算",
       "plans": [
@@ -2293,13 +2333,11 @@
         "q_square",
         "miramar",
         "noke",
-        "lifestyle_mall",
         "takashimaya",
         "lalaport",
         "hhh_plaza",
         "taimall",
         "dajiang",
-        "bigcity",
         "fe_bigcity_hsinchu",
         "zhongyou",
         "guangsan_sogo",
@@ -2320,43 +2358,15 @@
         "foodpanda",
         "mcdonalds",
         "cosmed",
-        "watsons"
+        "watsons",
+        "fe_dept",
+        "tw_dining"
       ],
       "payments": [
         "card",
         "applepay"
       ],
       "validThrough": "2026-12-31"
-    },
-    {
-      "card": "cube",
-      "plan": "shopping",
-      "title": "樂饗購・週四外食",
-      "rate": 8,
-      "cats": [
-        "dining"
-      ],
-      "days": [
-        4
-      ],
-      "payments": [
-        "card",
-        "applepay"
-      ],
-      "validThrough": "2026-12-31",
-      "conditions": [
-        {
-          "tag": "滿額",
-          "text": "週四外食滿 NT$2,000"
-        },
-        {
-          "tag": "需登錄"
-        },
-        {
-          "tag": "待確認",
-          "text": "調查時未能對照官網確認，查證後移除此標籤"
-        }
-      ]
     },
     {
       "card": "cube",
@@ -2415,7 +2425,9 @@
         "ezfly",
         "ideal_travel",
         "yongli_travel",
-        "sanhe_travel"
+        "sanhe_travel",
+        "tokyo_wb_harry_potter",
+        "hotel_domestic_mcc"
       ],
       "payments": [
         "card",
@@ -2496,7 +2508,7 @@
       "payments": [
         "pxpay"
       ],
-      "validFrom": "2026-06-01",
+      "validFrom": "2026-04-22",
       "validThrough": "2026-12-31",
       "conditions": [
         {
@@ -2516,7 +2528,8 @@
         "linepay",
         "jkopay",
         "pxpay",
-        "taishinpay"
+        "taishinpay",
+        "allpayplus"
       ],
       "excludeCats": [
         "convenience"
@@ -2560,7 +2573,6 @@
         "cpc",
         "seven",
         "familymart",
-        "hilife",
         "dashu_pharmacy",
         "donki",
         "daimaijia",
@@ -2620,7 +2632,8 @@
         "uniqlo",
         "gu",
         "zara",
-        "lululemon"
+        "lululemon",
+        "net"
       ],
       "payments": [
         "card",
@@ -2640,7 +2653,6 @@
         "foodpanda",
         "cashbox",
         "holiday_ktv",
-        "starpoint_ktv",
         "warm_ktv",
         "funnow",
         "tw_dining",
@@ -2649,7 +2661,9 @@
         "ticket_era",
         "kham",
         "opentix",
-        "hotels_tw"
+        "hotels_tw",
+        "oncor_ktv",
+        "singgo_ktv"
       ],
       "cats": [
         "dining"
@@ -2807,7 +2821,8 @@
         "lawson_jp",
         "biccamera",
         "gs25_kr",
-        "daiso"
+        "daiso",
+        "mcdonalds"
       ],
       "payments": [
         "taishinpay"
@@ -2818,7 +2833,7 @@
     {
       "card": "richart",
       "plan": "pay",
-      "title": "Pay著刷・LINE Pay",
+      "title": "Pay著刷・LINE Pay / 全盈+Pay",
       "rate": 2.3,
       "merchants": [
         "skm",
@@ -2836,10 +2851,12 @@
         "lawson_jp",
         "biccamera",
         "gs25_kr",
-        "daiso"
+        "daiso",
+        "mcdonalds"
       ],
       "payments": [
-        "linepay"
+        "linepay",
+        "allpayplus"
       ],
       "validFrom": "2026-07-01",
       "validThrough": "2027-03-31"
@@ -2866,7 +2883,8 @@
         "card",
         "applepay",
         "linepay",
-        "taishinpay"
+        "taishinpay",
+        "allpayplus"
       ],
       "validFrom": "2026-07-01",
       "validThrough": "2027-03-31",
